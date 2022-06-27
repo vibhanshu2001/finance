@@ -1,0 +1,63 @@
+INFO 2022-06-27 17:58:44,888 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 12612
+INFO 2022-06-27 17:58:55,087 basehttp "GET /pdf-all-transactions/ HTTP/1.1" 200 4240
+INFO 2022-06-27 17:59:11,935 basehttp "GET /signup/ HTTP/1.1" 200 18338
+INFO 2022-06-27 17:59:14,155 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-06-27 17:59:14,163 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-06-27 17:59:14,199 log Not Found: /login/css/style.css
+WARNING 2022-06-27 17:59:14,201 basehttp "GET /login/css/style.css HTTP/1.1" 404 6015
+WARNING 2022-06-27 17:59:14,207 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-06-27 17:59:14,207 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6153
+WARNING 2022-06-27 17:59:14,211 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-06-27 17:59:21,723 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-27 17:59:21,735 basehttp "GET / HTTP/1.1" 200 8441
+WARNING 2022-06-27 17:59:21,763 log Not Found: /styles.css
+WARNING 2022-06-27 17:59:21,764 basehttp "GET /styles.css HTTP/1.1" 404 5988
+INFO 2022-06-27 17:59:32,091 basehttp "GET /payment/ HTTP/1.1" 200 8458
+WARNING 2022-06-27 17:59:32,121 log Not Found: /payment/styles.css
+WARNING 2022-06-27 17:59:32,122 basehttp "GET /payment/styles.css HTTP/1.1" 404 6012
+WARNING 2022-06-27 17:59:32,131 log Not Found: /payment/script.js
+WARNING 2022-06-27 17:59:32,132 basehttp "GET /payment/script.js HTTP/1.1" 404 6009
+INFO 2022-06-27 17:59:33,179 basehttp "POST /payment/ HTTP/1.1" 200 953
+INFO 2022-06-27 17:59:39,693 basehttp "POST /response/ HTTP/1.1" 302 0
+INFO 2022-06-27 17:59:39,721 basehttp "GET / HTTP/1.1" 200 9846
+WARNING 2022-06-27 17:59:39,858 log Not Found: /styles.css
+WARNING 2022-06-27 17:59:39,864 basehttp "GET /styles.css HTTP/1.1" 404 5988
+INFO 2022-06-27 17:59:59,864 basehttp "GET /withdraw/ HTTP/1.1" 200 5943
+WARNING 2022-06-27 17:59:59,897 log Not Found: /withdraw/styles.css
+WARNING 2022-06-27 17:59:59,898 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6015
+WARNING 2022-06-27 17:59:59,984 log Not Found: /withdraw/favicon.png
+WARNING 2022-06-27 17:59:59,984 basehttp "GET /withdraw/favicon.png HTTP/1.1" 404 6018
+INFO 2022-06-27 18:00:13,190 basehttp "POST /withdraw/ HTTP/1.1" 302 0
+INFO 2022-06-27 18:00:13,195 basehttp "GET /withdraw HTTP/1.1" 301 0
+INFO 2022-06-27 18:00:13,236 basehttp "GET /withdraw/ HTTP/1.1" 200 6310
+WARNING 2022-06-27 18:00:13,262 log Not Found: /withdraw/styles.css
+WARNING 2022-06-27 18:00:13,262 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6015
+INFO 2022-06-27 18:00:19,494 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 9090
+INFO 2022-06-27 18:00:36,514 basehttp "GET /admin/ HTTP/1.1" 200 7978
+INFO 2022-06-27 18:00:38,341 basehttp "GET /admin/myapp/transaction/ HTTP/1.1" 200 8049
+INFO 2022-06-27 18:00:38,367 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-27 18:00:39,135 basehttp "GET /admin/ HTTP/1.1" 200 7978
+INFO 2022-06-27 18:00:41,195 basehttp "GET /admin/myapp/userprofile/ HTTP/1.1" 200 7420
+INFO 2022-06-27 18:00:41,222 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-27 18:02:51,736 basehttp "GET / HTTP/1.1" 200 9846
+WARNING 2022-06-27 18:02:51,783 log Not Found: /styles.css
+WARNING 2022-06-27 18:02:51,784 basehttp "GET /styles.css HTTP/1.1" 404 5988
+INFO 2022-06-27 18:02:55,153 basehttp "GET /withdraw/ HTTP/1.1" 200 6310
+WARNING 2022-06-27 18:02:55,179 log Not Found: /withdraw/styles.css
+WARNING 2022-06-27 18:02:55,180 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6015
+INFO 2022-06-27 18:03:12,386 basehttp "GET / HTTP/1.1" 200 9846
+WARNING 2022-06-27 18:03:12,418 log Not Found: /styles.css
+WARNING 2022-06-27 18:03:12,418 basehttp "GET /styles.css HTTP/1.1" 404 5988
+INFO 2022-06-27 18:03:13,466 basehttp "GET /admin-home/ HTTP/1.1" 200 12445
+INFO 2022-06-27 18:03:19,325 basehttp "GET /admin-all-users/ HTTP/1.1" 200 9924
+INFO 2022-06-27 18:03:23,216 basehttp "GET /regular-update/ HTTP/1.1" 200 12357
+INFO 2022-06-27 18:03:24,099 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+INFO 2022-06-27 18:03:24,993 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 9090
+INFO 2022-06-27 18:03:26,263 basehttp "GET /admin/ HTTP/1.1" 200 7978
+INFO 2022-06-27 18:03:27,948 basehttp "GET / HTTP/1.1" 200 9846
+WARNING 2022-06-27 18:03:27,979 log Not Found: /styles.css
+WARNING 2022-06-27 18:03:27,979 basehttp "GET /styles.css HTTP/1.1" 404 5988
+INFO 2022-06-27 18:03:48,872 basehttp "GET /admin-home/ HTTP/1.1" 200 12445
+INFO 2022-06-27 18:04:04,886 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 9090
+INFO 2022-06-27 18:04:50,819 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 13399
+INFO 2022-06-27 18:04:52,562 basehttp "GET /admin-home/ HTTP/1.1" 200 12445

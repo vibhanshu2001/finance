@@ -1,0 +1,71 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <title>My Title</title>
+        <style type="text/css">
+            @page {
+                size: {{ pagesize }};
+                margin: 1cm;
+                @frame footer {
+                    -pdf-frame-content: footerContent;
+                    bottom: 0cm;
+                    margin-left: 9cm;
+                    margin-right: 9cm;
+                    height: 1cm;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <h3 style="text-align:center;">All Transactions - X Capital</h3>
+        <table class="table table-sm" id="transTable" border="0.5" cellpadding="5">
+            <thead>
+                <tr>
+                    <th scope="col"style="font-size:0.8rem">Transaction by</th>
+                    <th scope="col"style="font-size:0.8rem">Date</th>
+                    <th scope="col"style="font-size:0.8rem">Amount</th>
+                    <th scope="col"style="font-size:0.8rem">Order Id</th>
+                    <th width="100" scope="col"style="font-size:0.8rem">Transaction Id</th>
+                    <th scope="col"style="font-size:0.8rem">Payment Mode</th>
+                    <th scope="col"style="font-size:0.8rem">Status</th>
+                    <th scope="col"style="font-size:0.8rem">Bank Transaction Id</th>
+                    <th scope="col"style="font-size:0.8rem">Bank Name</th>
+                    <th scope="col"style="font-size:0.8rem">Comments</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for transaction in mylist %}
+                <tr>
+                    <td style="font-size:0.6rem">{{transaction.made_by}}</td>
+                    <td style="font-size:0.6rem">{{transaction.made_on}}</td>
+                    <td style="font-size:0.6rem">{{transaction.amount}}</td>
+                    <td style="font-size:0.6rem">{{transaction.order_id}}</td>
+                    <td style="font-size:0.6rem">
+                        {% if transaction.status == 'TXN_SUCCESS' %}
+                        <span style="color:green;">
+                            {{transaction.txn_id}}
+                        </span>
+                        {% else %}
+                        <span style="color:red">
+                            {{transaction.txn_id}}
+                        </span>
+                        {% endif %}
+                        </td>
+                    <td style="font-size:0.6rem">{{transaction.payment_mode}}</td>
+                    <td style="font-size:0.6rem">{{transaction.status}}</td>
+                    <td style="font-size:0.6rem">{{transaction.bank_txn_id}}</td>
+                    <td style="font-size:0.6rem">{{transaction.bank_name}}</td>
+                    <td style="font-size:0.6rem">{{transaction.response_message}}</td>
+                </tr>
+                {% endfor %}
+                
+                
+            </tbody>
+        </table>
+        <div id="footerContent">
+            {%block page_foot%}
+                Page <pdf:pagenumber>
+            {%endblock%}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+{% extends 'admin-templates/base.html' %}
+{% load static %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
+{% block content %}
+        <!-- <div class="separator"></div> -->
+        <div class="card shadow mb-4" style="border: 0 !important;border-radius:15px">
+
+            <div class="card-body text-center ">
+                
+                <h3 class="display-4" style="color:#212529; font-size:30px !important">Add New User</h3>
+                
+            </div>
+        </div>
+        <div class="card shadow-sm my-4" style="border: 0 !important;border-radius:15px">
+
+            <div class="card-body">
+                
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            {{ form.username|as_crispy_field }}
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            {{ profile_form.plantype|as_crispy_field }}
+                        </div>
+                    </div>
+
+                    <div id="fixed-rate-div" style="display: none">
+                        {{ profile_form.fixed_rate|as_crispy_field }}
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-6">
+                            {{ form.first_name|as_crispy_field }}
+                        </div>
+                        <div class="col-md-6 col-lg-6">
+                            {{ form.last_name|as_crispy_field }}
+                        </div>
+                    </div>
+                    {{ form.email|as_crispy_field }}
+                    {{ profile_form.mobile|as_crispy_field }}
+                    {{ profile_form.profession|as_crispy_field }}
+                    {{ profile_form.user_commission|as_crispy_field }}
+                    {{ profile_form.profilephoto|as_crispy_field }}
+                    <div class="row">
+                        <div class="col-12">
+                            {{ form.password1|as_crispy_field }}
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            {{ form.password2|as_crispy_field }}
+                        </div>
+                    </div>
+
+                    <input style="cursor: pointer" type="submit" name="submit" id="submit"
+                        class="form-submit btn-dark btn" value="Register" />
+                </form>
+                
+            </div>
+        </div>
+
+{% endblock content %}

@@ -1,0 +1,68 @@
+{% extends 'admin-templates/base.html' %}
+{% load static %}
+{% block content %}
+
+<h3 class="display-4" style="color:#212529; font-size:30px !important">All Transactions 
+    <a href="/pdf-all-transactions" target="_blank"><i style="font-size: 1.3rem;" class="text-danger fa fa-download"></i></a>
+</h3>
+<div class="card shadow my-4" style="border: 0 !important;border-radius:15px">
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-sm" id="transTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Transaction by</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Amount</th>
+                        <th scope="col">Order Id</th>
+                        <th scope="col">Transaction Id</th>
+                        <th scope="col">Payment Mode</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Gateway Name</th>
+                        <th scope="col">Bank Transaction Id</th>
+                        <th scope="col">Bank Name</th>
+                        <th scope="col">Comments</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for transaction in transaction %}
+                    <tr>
+                        <td>{{transaction.made_by}}</td>
+                        <td>{{transaction.made_on}}</td>
+                        <td>{{transaction.amount}}</td>
+                        <td>{{transaction.order_id}}</td>
+                        <td>
+                            {% if transaction.status == 'TXN_SUCCESS' %}
+                            <span style="color:green">
+                                {{transaction.txn_id}}
+                            </span>
+                            {% else %}
+                            <span style="color:red">
+                                {{transaction.txn_id}}
+                            </span>
+                            {% endif %}
+                            </td>
+                        <td>{{transaction.payment_mode}}</td>
+                        <td>{{transaction.status}}</td>
+                        <td>{{transaction.gateway_name}}</td>
+                        <td>{{transaction.bank_txn_id}}</td>
+                        <td>{{transaction.bank_name}}</td>
+                        <td>{{transaction.response_message}}</td>
+                    </tr>
+                    {% endfor %}
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    $(document).ready( function () {
+    $('#transTable').DataTable();
+} );
+</script>
+{% endblock content %}

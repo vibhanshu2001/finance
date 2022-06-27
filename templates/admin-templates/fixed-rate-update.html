@@ -1,0 +1,28 @@
+{% extends 'admin-templates/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="card shadow my-4" style="border: 0 !important;border-radius:15px">
+
+            <div class="card-body text-center ">
+                
+                <h3 class="display-4" style="color:#212529; font-size:30px !important">Fixed Update</h3>
+                    <div style="display:flex;justify-content:center;align-items:center">
+                        <p style="color:red;">
+                            Click on the button once in a day.
+                        </p>
+                        
+                    </div>
+                    <a href="/fixed-rate-update" class="btn btn-dark btn-block">Regular Fixed Rate</a>
+                    
+                    
+                
+            </div>
+        </div>
+        
+        <script>
+            $(document).ready( function () {
+            $('#transTable').DataTable();
+        } );
+        </script>
+{% endblock content %}

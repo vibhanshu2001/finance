@@ -1,0 +1,48 @@
+{% extends 'admin-templates/base.html' %}
+{% load static %}
+{% block content %}
+
+<h3 class="display-4" style="color:#212529; font-size:30px !important">All Users</h3>
+<div class="card shadow my-4" style="border: 0 !important;border-radius:15px">
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-sm" id="transTable">
+                <thead>
+                    <tr>
+                        <th scope="col">Username</th>
+                        <th scope="col">Plan Type</th>
+                        <th scope="col">User Commission</th>
+                        <th scope="col">Fixed Rate</th>
+                        <th scope="col">Profession</th>
+                        <th scope="col">Mobile</th>
+                        <th scope="col">Profile Photo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for i in userprofile %}
+                    <tr>
+                        <td>{{i.user}}</td>
+                        <td>{{i.plantype}}</td>
+                        <td>{{i.user_commission}}</td>
+                        <td>{{i.fixed_rate}}</td>
+                        <td>{{i.profession}}</td>
+                        <td>{{i.mobile}}</td>
+                        <td><a target="_blank" href="{{i.profilephoto.url}}" alt="">show</a></td>
+                    </tr>
+                    {% endfor %}
+                    
+                    
+                </tbody>
+            </table>
+        </div>
+
+
+    </div>
+</div>
+<script>
+    $(document).ready( function () {
+    $('#transTable').DataTable();
+} );
+</script>
+{% endblock content %}

@@ -1,0 +1,66 @@
+{% extends 'admin-templates/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="card shadow my-4" style="border: 0 !important;border-radius:15px">
+
+            <div class="card-body text-center ">
+                
+                <h3 class="display-4" style="color:#212529; font-size:30px !important">Welcome to Axe Capital Web
+                    Portal.</h3>
+                    <div style="display:flex;justify-content:space-between;align-items:center">
+                        <span>
+                            Total deposited amount by all users: <span style="color:green">₹{{total_money}}</span>
+                        </span>
+                        <span>
+                            Total present value of investments: <span style="color:blue">₹{{total_present_value}}</span>
+                        </span>
+                    </div>
+                    
+                    
+                
+            </div>
+        </div>
+        <div class="card shadow-sm" style="border: 0 !important;border-radius:15px">
+
+            <div class="card-body  ">
+                <div class="table-responsive">
+                    <table class="table table-sm" id="transTable">
+                        <thead>
+                            <tr>
+                                <th scope="col">Username</th>
+                                <th scope="col">Invested Amount</th>
+                                <th scope="col">Present Amount</th>
+                                <th scope="col">Amount Deposited On</th>
+                                <th scope="col">Plan Type</th>
+                                <th scope="col">Last Updated</th>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in result %}
+                            {% if i.status == 'TXN_SUCCESS' %}
+                            <tr>
+                                <td>{{i.made_by}}</td>
+                                <td>{{i.amount}}</td>
+                                <td>{{i.present_amount}}</td>
+                                <td>{{i.made_on}}</td>
+                                <td>{{i.plantype}}</td>
+                                <td>{{i.last_updated}}</td>
+                            </tr>
+                            {% endif %}
+                            {% endfor %}
+                            
+                            
+                        </tbody>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+        <script>
+            $(document).ready( function () {
+            $('#transTable').DataTable();
+        } );
+        </script>
+{% endblock content %}

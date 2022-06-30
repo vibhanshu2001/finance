@@ -37,6 +37,43 @@
                 </nav>
             </div>
         </header>
+        <small>Welcome <b>{{request.user.username|title}}</b> 
+            <a class="text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">(view profile)</a>
+        </small>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 0 !important;">
+                  <h5 class="modal-title" id="exampleModalLabel">My Profile</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><small>Username</small> <span class="badge bg-dark">{{request.user.username}}</span></li>
+                        {% for i in userdata %}
+                            {% if i.user.username == request.user.username %}
+                            <li class="list-group-item"><small>Plantype</small> <span class="badge bg-dark">{{i.plantype}}</span></li>
+                            <li class="list-group-item"><small>Fixed Rate</small> <span class="badge bg-dark">{{i.fixed_rate}}</span></li>
+                            <li class="list-group-item"><small>Profession</small> <span class="badge bg-dark">{{i.profession}}</span></li>
+                            <li class="list-group-item"><small>Mobile</small> <span class="badge bg-dark">{{i.mobile}}</span></li>
+                            <li class="list-group-item"><small>Profile Photo</small> <span class="badge bg-dark"><a class="text-decoration-none  text-white" target="_blank" href="{{i.profilephoto.url}}" alt="">click me</a></span></li>
+                            {% endif %}
+                        {% endfor %}
+
+                        
+                    </ul>
+                </div>
+                <div class="modal-footer" style="border-top: 0 !important;">
+                    <a class="text-decoration-none" href="/password-reset">
+                        <small>Change Password</small>
+                    </a>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+
         <h3 class="display-4 text-center" style="color:#212529; font-size:30px !important;font-weight:bold">Investments</h3>
         <div class="card shadow my-4" style="border: 0 !important;border-radius:15px">
 
@@ -48,7 +85,7 @@
                                 <th scope="col">Username</th>
                                 <th scope="col">Invested Amount</th>
                                 <th scope="col">Present Amount</th>
-                                <th scope="col">Amount Deposited On</th>
+                                <th scope="col">Date</th>
                                 <th scope="col">Plan Type</th>
                                 <th scope="col">Last Updated</th>
                                 
@@ -154,7 +191,9 @@
         <script>
             $(document).ready( function () {
             $('#transTable').DataTable();
-            $('#transTable2').DataTable();
+            $('#transTable2').DataTable({
+                order: [[1, 'desc']],
+            });
         } );
         </script>
 </body>

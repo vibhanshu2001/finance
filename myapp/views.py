@@ -169,7 +169,8 @@ def fixed_rate_page(request):
 @login_required
 def index(request):
     data = Transaction.objects.all()
-    return render(request,'index.html',{'data':data})
+    userdata = UserProfile.objects.all()
+    return render(request,'index.html',{'data':data,'userdata':userdata})
 @login_required
 def regular_update(request):
     reg_update = RegularUpdate.objects.all()

@@ -62,7 +62,9 @@
 </div>
 <script>
     $(document).ready( function () {
-    $('#transTable').DataTable();
+    $('#transTable').DataTable({
+        order: [[1, 'desc']],
+    });
 } );
 </script>
 {% endblock content %}

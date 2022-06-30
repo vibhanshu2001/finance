@@ -25,7 +25,7 @@ SECRET_KEY = 'y+1u=%#ep2d2x#lb4@_cok5ea6r=hk^!@#*=uv9+!iqkyad5q4'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ec2-3-110-173-160.ap-south-1.compute.amazonaws.com','axecap.co.in','3.110.173.160']
+ALLOWED_HOSTS = ['ec2-3-110-173-160.ap-south-1.compute.amazonaws.com','axecap.co.in','3.110.173.160','127.0.0.1']
 
 
 # Application definition

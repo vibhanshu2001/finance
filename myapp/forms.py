@@ -34,11 +34,19 @@ class RegularUpdateForm(forms.ModelForm):
 class WithdrawForm(forms.ModelForm):
     class Meta:
         model = Withdraw
-        fields = ('requested_by','amount')
+        fields = ('requested_by','amount','status','status_updated_by','status_updated_on','present_balance','plantype','user_commission','invested_balance')
         labels = {
-            'requested_by': 'Username',
-            'amount': 'Withdrawal Amount'
+            'requested_by': 'Requested by',
+            'amount': 'Withdrawal Amount',
+            'status': 'Status (Type A/R)',
+            'status_updated_by': 'Status updated by',
+            'present_balance': 'Present Balance',
+            'plantype': 'Plantype',
+            'user_commission': 'User Commission',
+            'invested_balance': 'Invested Balance'
         }
         widgets = {
         'requested_by':forms.TextInput(attrs={'readonly':True}),
+        'status_updated_by':forms.TextInput(attrs={'readonly':True}),
+        'plantype':forms.TextInput(attrs={'readonly':True}),
         }

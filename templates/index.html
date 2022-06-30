@@ -56,7 +56,7 @@
                         </thead>
                         <tbody>
                             {% for i in data %}
-                            {% if i.made_by == request.user and i.status == 'TXN_SUCCESS' %}
+                            {% if i.made_by == request.user.username and i.status == 'TXN_SUCCESS' %}
                             <tr>
                                 <td>{{i.made_by}}</td>
                                 <td>{{i.amount}}</td>
@@ -99,7 +99,7 @@
                         <tbody>
                             
                             {% for transaction in data %}
-                            {% if transaction.made_by == request.user %}
+                            {% if transaction.made_by == request.user.username %}
                             <tr>
                                 <td>{{transaction.made_by}}</td>
                                 <td>{{transaction.made_on}}</td>

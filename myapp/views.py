@@ -22,6 +22,8 @@ from django.template.loader import get_template
 from django.template import Context
 from html import escape
 import io
+import uuid
+import random
 
 def render_to_pdf(template_src, context_dict):
     template = get_template(template_src)
@@ -63,18 +65,90 @@ def password_reset_done(request):
 @login_required
 def withdraw(request):
     data = Withdraw.objects.all()
+    mydata = Transaction.objects.values('made_by').annotate(total_present_amount=Sum('amount')).order_by('-total_present_amount').filter(status='TXN_SUCCESS')
+
     if request.method == 'POST':
         form = WithdrawForm(request.POST)
         if form.is_valid():
             new_record = form.save(commit=False)
             new_record.save()
+            for i in mydata:
+                if i['made_by'] == new_record.requested_by:
+                    new_record.invested_balance = i['total_present_amount']
+                    new_record.save()
+            
             return redirect('/withdraw')
     form = WithdrawForm(initial={'requested_by': request.user.username})
     return render(request, 'withdraw.html',{'form':form,'data':data})
 @login_required
 def admin_withdrawal_requests(request):
     data = Withdraw.objects.all()
+    mydata = Transaction.objects.values('made_by').annotate(total_present_amount=Sum('present_amount')).order_by('-total_present_amount').filter(status='TXN_SUCCESS')
+    trandata = Transaction.objects.all()
+    for i in mydata:
+        for j in data:
+            if i['made_by'] == j.requested_by:
+                j.present_balance = i['total_present_amount']
+                j.save()
+    for i in data:
+        if i.status == 'A' and i.amount<=i.present_balance:
+            i.status = 'Roll Over'
+            i.save()
+            transdata = Transaction.objects.all()
+            for j in transdata:
+                if j.made_by == i.requested_by:
+                    j.status = 'TXN_WDRW'
+                    j.save()
+            new_invest_amount = 0
+            if i.plantype == 'fixed':
+                new_invest_amount = (i.present_balance - i.amount)
+            else:
+                new_invest_amount = i.present_balance - i.amount - i.user_commission*(i.present_balance-i.invested_balance)/100
+            new_txn_status = 'TXN_SUCCESS'
+            new_txn_id = uuid.uuid4().hex
+            new_order_id = 'rollover'+str(random.randint(0, 1000))
+            new_payment_mode = 'Online'
+            new_bank_txn_id = uuid.uuid4().hex
+            new_comment = 'Amount withdrawn successfully and remaining amount in case is rolled over as this transaction'
+            transaction = Transaction.objects.create(made_by=i.requested_by, amount=new_invest_amount,present_amount=new_invest_amount,status=new_txn_status,txn_id=new_txn_id,order_id=new_order_id,payment_mode=new_payment_mode,bank_txn_id=new_bank_txn_id,response_message=new_comment)
+            transaction.save()
+
     return render(request, 'admin-templates/admin-withdrawal-requests.html',{'data':data})
+def update_withdrawl_requests(request,id):
+    if request.method=="POST":
+        pi = Withdraw.objects.get(pk=id)
+        fm=WithdrawForm(request.POST, instance=pi)
+        if fm.is_valid():
+            note = fm.save(commit=False)
+            note.status_updated_by = request.user.username
+            note.status_updated_on = timezone.now()
+            note.save()
+            present_balance = 0
+            trandata = Transaction.objects.all()
+            data = Transaction.objects.values('made_by').annotate(total_present_amount=Sum('present_amount')).order_by('-total_present_amount').filter(status='TXN_SUCCESS')
+            for i in data:
+                if i['made_by'] == pi.requested_by:
+                    present_balance = i['total_present_amount']
+            mydata = UserProfile.objects.all()
+            for i in mydata:
+                if i.user.username == note.requested_by:
+                    note.plantype = i.plantype
+                    note.save()
+                    
+            return redirect('/admin-withdrawal-requests')
+    else:
+        pi = Withdraw.objects.get(pk=id)
+        fm = WithdrawForm(instance=pi)
+    return render(request,'admin-templates/admin-withdrawal-requests-edit.html',{'form':fm})
+def delete_withdrawl_requests(request,id):
+    if request.method == 'POST':
+        pi = Withdraw.objects.get(pk=id)
+        pi.delete()
+        return redirect('/admin-withdrawal-requests')
+
+
+
+
 @login_required
 def fixed_rate_update(request):
     result = Transaction.objects.all()
@@ -126,7 +200,7 @@ def admin_home(request):
             total_present_value += i.present_amount
         userdata = UserProfile.objects.all()
         for j in userdata:
-            if j.user == i.made_by:
+            if j.user.username == i.made_by:
                 i.plantype = j.plantype
                 i.save()
     
@@ -201,7 +275,7 @@ def payment(request):
         param_dict = data_dict
         checksum = Checksum.generate_checksum(data_dict, MERCHANT_KEY)
         param_dict['CHECKSUMHASH'] = checksum
-        transaction = Transaction.objects.create(made_by=request.user, amount=amount,present_amount=amount)
+        transaction = Transaction.objects.create(made_by=request.user.username, amount=amount,present_amount=amount)
         transaction.save()
         transaction.checksum = checksum
         transaction.order_id = order_id
@@ -249,6 +323,7 @@ def response(request):
                 # i.save()
                     
             # 
+
             return redirect('/')
             # return render(request,"index.html")
             # return render(request,"response.html",{"paytm":data_dict})

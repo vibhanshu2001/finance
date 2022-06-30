@@ -34,8 +34,9 @@ class RegularUpdate(models.Model):
         return str(self.transaction_date_time)
 
 class Transaction(models.Model):
-    made_by = models.ForeignKey(User, related_name='transactions', 
-                                on_delete=models.CASCADE)
+    # made_by = models.ForeignKey(User, related_name='transactions', 
+    #                             on_delete=models.CASCADE )
+    made_by = models.CharField(max_length=100, null=True, blank=True)
     plantype = models.CharField(max_length=200, choices=PLAN_TYPE, default='flexible')
     fixed_rate = models.CharField(max_length=3, null=True, default='3')
     made_on = models.DateTimeField(auto_now_add=True)
@@ -57,5 +58,13 @@ class Withdraw(models.Model):
     requested_by = models.CharField(max_length=100, null=True, blank=True)
     requested_on = models.DateTimeField(default=timezone.now)
     amount = models.IntegerField()
+    present_balance = models.IntegerField(null=True, blank=True)
+    invested_balance = models.IntegerField(null=True, blank=True)
+    status = models.CharField(max_length=5, null=True, blank=True)
+    status_updated_by = models.CharField(max_length=100, null=True, blank=True)
+    user_commission = models.IntegerField(null=True, blank=True, default=25)
+    status_updated_on = models.DateTimeField(null=True, blank=True)
+    plantype = models.CharField(max_length=200, choices=PLAN_TYPE, default='',null=True, blank=True)
     def __str__(self):
         return str(self.requested_by)
+

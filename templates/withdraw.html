@@ -53,6 +53,9 @@
                         <div class="col-md-6 mb-0">
                             {{ form.amount|as_crispy_field }}
                         </div>
+                        <div style="display:none" class="col-md-6 mb-0">
+                            {{ form.plantype|as_crispy_field }}
+                        </div>
                         
                     </div>
                     
@@ -76,6 +79,7 @@
                                 <th scope="col">Requested by</th>
                                 <th scope="col">Date</th>
                                 <th scope="col">Amount</th>
+                                <th scope="col">Withdraw Status</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -85,6 +89,14 @@
                                 <td>{{i.requested_by}}</td>
                                 <td>{{i.requested_on}}</td>
                                 <td>{{i.amount}}</td>
+                                {% if i.status == 'Roll Over' %}
+                                <td class="text-success">Approved</td>
+                                {% elif i.status is None %}
+                                <td class="text-info">Awaiting</td>
+                                {% else %}
+                                <td class="text-danger">Rejected</td>
+                                {% endif %}
+                                
                             </tr>
                             {% endif %}
                             

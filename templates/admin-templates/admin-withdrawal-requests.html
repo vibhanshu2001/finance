@@ -11,16 +11,62 @@
                 <thead>
                     <tr>
                         <th scope="col">Requested by</th>
-                        <th scope="col">Date</th>
-                        <th scope="col">Amount</th>
+                        <th scope="col">Requested On</th>
+                        <th scope="col">Amount Requested</th>
+                        <th scope="col">Present Balance</th>
+                        <th scope="col">Admin Commission</th>
+                        <th scope="col">Plantype</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Status by</th>
+                        <th scope="col">Status on</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
                     {% for i in data %}
                     <tr>
+                        {% if i.status is None %}
+                        
+                        <td><img style="height:20px;width:30px" src="https://ucmas.ca/wp-content/uploads/2019/06/new-gif-image-6.gif"> {{i.requested_by}}</td>
+                        {% else %}
                         <td>{{i.requested_by}}</td>
+                        {% endif %}
                         <td>{{i.requested_on}}</td>
-                        <td>{{i.amount}}</td>
+                        <td><i>{{i.amount}}</i></td>
+                        <td>{{i.present_balance}}</td>
+                        <td>
+                            {% if i.plantype == 'fixed' %}
+                            0%
+                            {% else %}
+                            {{i.user_commission}}%
+                            {% endif %}
+                            
+                        </td>
+                        <td>{{i.plantype}}</td>
+                        <td>
+                            {% if i.status == 'Roll Over' %}
+                                <span class="text-success">{{i.status}}</span>
+                            {% else %}
+                                <span class="text-danger">{{i.status}}</span>
+                            {% endif %}
+                            
+                        </td>
+                        <td>{{i.status_updated_by}}</td>
+                        <td>{{i.status_updated_on}}</td>
+                        <td>
+                            {% if i.status is 'A' or i.status is None %}
+                            <a href="{% url 'update_withdrawl_requests' i.id %}" class="btn btn-sm btn-warning">Edit</a>
+                            {% else %}
+                            <button disabled class="btn btn-sm btn-warning">Edit</button>
+                            {% endif %}
+                        </td>
+                        <td>
+                            <form action="{% url 'delete_withdrawl_requests' i.id %}" method="POST">
+                                {%csrf_token%}
+                                <input class="btn btn-danger btn-sm" type="submit" value="Delete">
+                            </form>
+                        </td>
                     </tr>
                     {% endfor %}
                     

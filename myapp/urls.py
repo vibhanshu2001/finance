@@ -28,6 +28,8 @@ urlpatterns = [
          auth_views.PasswordResetCompleteView.as_view(template_name='password_reset_complete.html'),
          name='password_reset_complete'),
      path('pdf-all-transactions/', views.pdf_all_transactions, name='pdf_all_transactions'),
+     path('update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/<int:id>/',views.update_withdrawl_requests,name="update_withdrawl_requests"),
+     path('delete-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/<int:id>/',views.delete_withdrawl_requests,name="delete_withdrawl_requests"),
 ]
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

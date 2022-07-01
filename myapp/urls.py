@@ -18,6 +18,7 @@ urlpatterns = [
     path('fixed-rate-update/', views.fixed_rate_update, name='fixed_rate_update'), 
     path('fixed-rate-page/', views.fixed_rate_page, name='fixed_rate_page'),
     path('withdraw/', views.withdraw, name='withdraw'),
+    path('company-capital/', views.company_capital_page, name='company_capital'),
     path('admin-withdrawal-requests/', views.admin_withdrawal_requests, name='admin_withdrawal_requests'),
     path('password-reset/', views.ResetPasswordView.as_view(), name='password_reset'),
     path('password-reset/done', views.password_reset_done, name='password_reset_done'),

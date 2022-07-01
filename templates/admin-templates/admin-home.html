@@ -21,6 +21,9 @@
                 
             </div>
         </div>
+        <div id="container"style="display:flex;justify-content:center;align-items: center;" class="my-3">
+            <canvas id="pie-chart" style="height:20rem; width:20rem"></canvas>
+          </div>
         <div class="card shadow-sm" style="border: 0 !important;border-radius:15px">
 
             <div class="card-body  ">
@@ -62,5 +65,31 @@
             $(document).ready( function () {
             $('#transTable').DataTable();
         } );
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+        <script>
+      
+          var config = {
+            type: 'bar',
+            data: {
+              datasets: [{
+                data: {{ data|safe }},
+                backgroundColor: [
+                  '#354259', '#54BAB9', '#000', '#000', '#000'
+                ],
+                label: 'Amount in Rs.'
+              }],
+              labels: {{ labels|safe }}
+            },
+            options: {
+              responsive: false
+            }
+          };
+      
+          window.onload = function() {
+            var ctx = document.getElementById('pie-chart').getContext('2d');
+            window.myPie = new Chart(ctx, config);
+          };
+      
         </script>
 {% endblock content %}

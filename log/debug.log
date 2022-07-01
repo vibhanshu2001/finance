@@ -6151,3 +6151,1080 @@ WARNING 2022-06-30 20:48:15,706 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
 INFO 2022-06-30 20:48:26,126 basehttp "GET / HTTP/1.1" 200 12492
 WARNING 2022-06-30 20:48:26,225 log Not Found: /styles.css
 WARNING 2022-06-30 20:48:26,225 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 20:49:44,231 autoreload Watching for file changes with StatReloader
+INFO 2022-06-30 20:49:57,968 basehttp "GET /admin-home/ HTTP/1.1" 200 11274
+INFO 2022-06-30 20:50:00,348 basehttp "GET / HTTP/1.1" 200 12492
+WARNING 2022-06-30 20:50:00,382 log Not Found: /styles.css
+WARNING 2022-06-30 20:50:00,382 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 20:50:25,259 basehttp "GET /payment/ HTTP/1.1" 200 8458
+WARNING 2022-06-30 20:50:25,304 log Not Found: /payment/styles.css
+WARNING 2022-06-30 20:50:25,304 basehttp "GET /payment/styles.css HTTP/1.1" 404 6568
+WARNING 2022-06-30 20:50:25,315 log Not Found: /payment/script.js
+WARNING 2022-06-30 20:50:25,315 basehttp "GET /payment/script.js HTTP/1.1" 404 6565
+WARNING 2022-06-30 20:50:25,861 log Not Found: /payment/favicon.png
+WARNING 2022-06-30 20:50:25,861 basehttp "GET /payment/favicon.png HTTP/1.1" 404 6571
+INFO 2022-06-30 20:50:26,409 basehttp "POST /payment/ HTTP/1.1" 200 953
+INFO 2022-06-30 20:50:35,136 basehttp "POST /response/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:50:35,150 basehttp "GET / HTTP/1.1" 200 13897
+WARNING 2022-06-30 20:50:35,218 log Not Found: /styles.css
+WARNING 2022-06-30 20:50:35,218 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 20:50:38,598 basehttp "GET /admin-home/ HTTP/1.1" 200 11724
+INFO 2022-06-30 20:50:44,240 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+INFO 2022-06-30 20:50:45,462 basehttp "GET /fixed-rate-update/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:50:45,515 basehttp "GET /admin-home/ HTTP/1.1" 200 11744
+INFO 2022-06-30 20:50:58,905 basehttp "GET /withdraw/ HTTP/1.1" 200 8426
+WARNING 2022-06-30 20:50:58,939 log Not Found: /withdraw/styles.css
+WARNING 2022-06-30 20:50:58,939 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6571
+WARNING 2022-06-30 20:50:59,027 log Not Found: /withdraw/favicon.png
+WARNING 2022-06-30 20:50:59,027 basehttp "GET /withdraw/favicon.png HTTP/1.1" 404 6574
+INFO 2022-06-30 20:51:02,517 basehttp "POST /withdraw/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:51:02,520 basehttp "GET /withdraw HTTP/1.1" 301 0
+INFO 2022-06-30 20:51:02,554 basehttp "GET /withdraw/ HTTP/1.1" 200 8963
+WARNING 2022-06-30 20:51:02,578 log Not Found: /withdraw/styles.css
+WARNING 2022-06-30 20:51:02,579 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6571
+INFO 2022-06-30 20:51:05,961 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 17206
+INFO 2022-06-30 20:51:08,081 basehttp "GET /update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/26/ HTTP/1.1" 200 12422
+INFO 2022-06-30 20:51:17,814 basehttp "GET /admin-home/ HTTP/1.1" 200 11744
+INFO 2022-06-30 20:51:22,131 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 17206
+INFO 2022-06-30 20:51:25,857 basehttp "GET /admin-home/ HTTP/1.1" 200 11744
+INFO 2022-06-30 20:51:31,011 basehttp "GET /admin/ HTTP/1.1" 200 7949
+INFO 2022-06-30 20:51:31,042 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,047 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,049 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,051 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,053 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,074 basehttp "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,095 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,096 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,111 basehttp "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,112 basehttp "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:31,113 basehttp "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2022-06-30 20:51:33,432 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 17206
+INFO 2022-06-30 20:51:34,809 basehttp "GET /update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/26/ HTTP/1.1" 200 12422
+INFO 2022-06-30 20:51:37,721 basehttp "POST /update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/26/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:51:37,727 basehttp "GET /admin-withdrawal-requests HTTP/1.1" 301 0
+INFO 2022-06-30 20:51:37,770 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 17026
+INFO 2022-06-30 20:51:40,544 basehttp "GET /admin-home/ HTTP/1.1" 200 11370
+INFO 2022-06-30 20:51:47,797 basehttp "GET /withdraw/ HTTP/1.1" 200 8966
+WARNING 2022-06-30 20:51:47,822 log Not Found: /withdraw/styles.css
+WARNING 2022-06-30 20:51:47,822 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6571
+INFO 2022-06-30 20:51:50,190 basehttp "GET / HTTP/1.1" 200 14556
+WARNING 2022-06-30 20:51:50,227 log Not Found: /styles.css
+WARNING 2022-06-30 20:51:50,228 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 20:52:15,597 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+INFO 2022-06-30 20:52:34,363 basehttp "GET /admin-home/ HTTP/1.1" 200 11370
+INFO 2022-06-30 20:52:50,400 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-06-30 20:52:51,206 autoreload Watching for file changes with StatReloader
+INFO 2022-06-30 20:52:53,382 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+INFO 2022-06-30 20:52:55,376 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+ERROR 2022-06-30 20:53:00,196 log Internal Server Error: /fixed-rate-update/
+Traceback (most recent call last):
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py", line 158, in fixed_rate_update
+    print(i.percent_alter)
+AttributeError: 'Transaction' object has no attribute 'percent_alter'
+ERROR 2022-06-30 20:53:00,197 basehttp "GET /fixed-rate-update/ HTTP/1.1" 500 68613
+INFO 2022-06-30 20:53:10,901 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-06-30 20:53:11,659 autoreload Watching for file changes with StatReloader
+INFO 2022-06-30 20:53:13,201 basehttp "GET /fixed-rate-update/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:53:13,243 basehttp "GET /admin-home/ HTTP/1.1" 200 11390
+INFO 2022-06-30 20:53:16,324 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+INFO 2022-06-30 20:53:17,255 basehttp "GET /fixed-rate-update/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:53:17,319 basehttp "GET /admin-home/ HTTP/1.1" 200 11390
+INFO 2022-06-30 20:53:29,395 basehttp "GET /admin/ HTTP/1.1" 200 7949
+INFO 2022-06-30 20:53:32,965 basehttp "GET /admin/myapp/userprofile/ HTTP/1.1" 200 7420
+INFO 2022-06-30 20:53:33,018 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:33,018 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:33,018 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:33,020 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:33,023 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:33,027 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:33,028 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:33,029 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-30 20:53:33,074 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:34,259 basehttp "GET /admin/myapp/userprofile/1/change/ HTTP/1.1" 200 10839
+INFO 2022-06-30 20:53:34,285 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:34,288 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-30 20:53:34,307 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:34,308 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:34,312 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:53:35,497 basehttp "GET /admin/myapp/userprofile/ HTTP/1.1" 200 7420
+INFO 2022-06-30 20:53:36,459 basehttp "GET /admin/myapp/userprofile/1/change/ HTTP/1.1" 200 10839
+INFO 2022-06-30 20:53:36,476 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-30 20:53:37,347 basehttp "GET /admin/myapp/userprofile/ HTTP/1.1" 200 7420
+INFO 2022-06-30 20:57:22,603 basehttp "GET /admin/myapp/userprofile/2/change/ HTTP/1.1" 200 10839
+INFO 2022-06-30 20:57:22,633 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-30 20:57:25,750 basehttp "POST /admin/myapp/userprofile/2/change/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:57:25,813 basehttp "GET /admin/myapp/userprofile/ HTTP/1.1" 200 7629
+INFO 2022-06-30 20:57:25,841 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-30 20:57:27,674 basehttp "GET /admin/myapp/userprofile/1/change/ HTTP/1.1" 200 10839
+INFO 2022-06-30 20:57:27,694 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-30 20:57:30,351 basehttp "POST /admin/myapp/userprofile/1/change/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:57:30,406 basehttp "GET /admin/myapp/userprofile/ HTTP/1.1" 200 7629
+INFO 2022-06-30 20:57:30,426 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-30 20:57:36,506 basehttp "GET /payment/ HTTP/1.1" 200 8458
+WARNING 2022-06-30 20:57:36,567 log Not Found: /payment/styles.css
+WARNING 2022-06-30 20:57:36,569 log Not Found: /payment/script.js
+WARNING 2022-06-30 20:57:36,570 basehttp "GET /payment/script.js HTTP/1.1" 404 6565
+WARNING 2022-06-30 20:57:36,570 basehttp "GET /payment/styles.css HTTP/1.1" 404 6568
+INFO 2022-06-30 20:57:37,605 basehttp "POST /payment/ HTTP/1.1" 200 953
+INFO 2022-06-30 20:57:45,704 basehttp "POST /response/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:57:45,718 basehttp "GET / HTTP/1.1" 200 15981
+WARNING 2022-06-30 20:57:45,801 log Not Found: /styles.css
+WARNING 2022-06-30 20:57:45,801 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 20:57:49,103 basehttp "GET /admin-home/ HTTP/1.1" 200 11840
+INFO 2022-06-30 20:57:50,469 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+INFO 2022-06-30 20:57:52,100 basehttp "GET /fixed-rate-update/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:57:52,160 basehttp "GET /admin-home/ HTTP/1.1" 200 11860
+INFO 2022-06-30 20:58:15,241 basehttp "GET /admin/myapp/transaction/ HTTP/1.1" 200 8928
+INFO 2022-06-30 20:58:15,269 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-30 20:58:16,525 basehttp "GET /admin/myapp/transaction/29/change/ HTTP/1.1" 200 14355
+INFO 2022-06-30 20:58:16,558 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:58:16,558 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 304 0
+INFO 2022-06-30 20:58:16,560 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-06-30 20:59:23,318 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-06-30 20:59:24,286 autoreload Watching for file changes with StatReloader
+INFO 2022-06-30 20:59:30,736 basehttp "GET /admin-home/ HTTP/1.1" 200 11860
+INFO 2022-06-30 20:59:32,789 basehttp "GET / HTTP/1.1" 200 15998
+WARNING 2022-06-30 20:59:32,830 log Not Found: /styles.css
+WARNING 2022-06-30 20:59:32,830 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 20:59:34,473 basehttp "GET /payment/ HTTP/1.1" 200 8458
+WARNING 2022-06-30 20:59:34,518 log Not Found: /payment/script.js
+WARNING 2022-06-30 20:59:34,522 basehttp "GET /payment/script.js HTTP/1.1" 404 6565
+WARNING 2022-06-30 20:59:34,527 log Not Found: /payment/styles.css
+WARNING 2022-06-30 20:59:34,527 basehttp "GET /payment/styles.css HTTP/1.1" 404 6568
+INFO 2022-06-30 20:59:35,789 basehttp "POST /payment/ HTTP/1.1" 200 953
+INFO 2022-06-30 20:59:43,998 basehttp "POST /response/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:59:44,054 basehttp "GET / HTTP/1.1" 200 17400
+WARNING 2022-06-30 20:59:44,100 log Not Found: /styles.css
+WARNING 2022-06-30 20:59:44,106 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 20:59:47,656 basehttp "GET /admin-home/ HTTP/1.1" 200 12310
+INFO 2022-06-30 20:59:50,912 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+INFO 2022-06-30 20:59:52,083 basehttp "GET /fixed-rate-update/ HTTP/1.1" 302 0
+INFO 2022-06-30 20:59:52,147 basehttp "GET /admin-home/ HTTP/1.1" 200 12330
+INFO 2022-06-30 21:00:00,749 basehttp "GET /admin-home/ HTTP/1.1" 200 12330
+INFO 2022-06-30 21:00:26,967 basehttp "GET / HTTP/1.1" 200 17420
+WARNING 2022-06-30 21:00:26,997 log Not Found: /styles.css
+WARNING 2022-06-30 21:00:26,997 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 21:01:51,809 basehttp "GET /admin-home/ HTTP/1.1" 200 12330
+INFO 2022-06-30 21:02:20,245 basehttp "GET / HTTP/1.1" 200 17429
+WARNING 2022-06-30 21:02:20,282 log Not Found: /styles.css
+WARNING 2022-06-30 21:02:20,283 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 21:02:21,017 log Not Found: /favicon.png
+WARNING 2022-06-30 21:02:21,017 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 21:02:35,019 basehttp "GET / HTTP/1.1" 200 17432
+WARNING 2022-06-30 21:02:35,051 log Not Found: /styles.css
+WARNING 2022-06-30 21:02:35,052 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 21:02:35,367 log Not Found: /favicon.png
+WARNING 2022-06-30 21:02:35,368 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 21:02:40,816 basehttp "GET /password-reset HTTP/1.1" 301 0
+INFO 2022-06-30 21:02:40,829 basehttp "GET /password-reset/ HTTP/1.1" 200 3687
+WARNING 2022-06-30 21:02:40,870 log Not Found: /password-reset/styles.css
+WARNING 2022-06-30 21:02:40,870 basehttp "GET /password-reset/styles.css HTTP/1.1" 404 6589
+WARNING 2022-06-30 21:02:40,924 log Not Found: /password-reset/favicon.png
+WARNING 2022-06-30 21:02:40,925 basehttp "GET /password-reset/favicon.png HTTP/1.1" 404 6592
+INFO 2022-06-30 21:04:09,894 basehttp "GET /admin-home/ HTTP/1.1" 200 12330
+WARNING 2022-06-30 21:04:10,015 log Not Found: /favicon.ico
+WARNING 2022-06-30 21:04:10,015 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 21:06:05,428 basehttp "GET /regular-update/ HTTP/1.1" 200 13001
+INFO 2022-06-30 21:06:50,572 basehttp "GET / HTTP/1.1" 200 17433
+WARNING 2022-06-30 21:06:50,611 log Not Found: /styles.css
+WARNING 2022-06-30 21:06:50,611 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 21:06:51,390 log Not Found: /favicon.png
+WARNING 2022-06-30 21:06:51,390 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 21:08:15,484 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 17026
+WARNING 2022-06-30 21:08:15,604 log Not Found: /favicon.ico
+WARNING 2022-06-30 21:08:15,604 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 21:08:32,696 basehttp "GET /admin-home/ HTTP/1.1" 200 12330
+INFO 2022-06-30 23:01:32,289 basehttp "GET /admin-home/ HTTP/1.1" 200 12330
+INFO 2022-06-30 23:01:34,625 basehttp "GET / HTTP/1.1" 200 17433
+WARNING 2022-06-30 23:01:34,667 log Not Found: /styles.css
+WARNING 2022-06-30 23:01:34,667 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 23:06:28,979 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-06-30 23:06:29,930 autoreload Watching for file changes with StatReloader
+INFO 2022-06-30 23:06:32,562 basehttp "GET /admin-home/ HTTP/1.1" 200 12330
+INFO 2022-06-30 23:06:47,521 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-06-30 23:06:48,381 autoreload Watching for file changes with StatReloader
+INFO 2022-06-30 23:07:08,230 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-06-30 23:07:08,755 autoreload Watching for file changes with StatReloader
+INFO 2022-06-30 23:07:31,184 basehttp "GET /admin-home/ HTTP/1.1" 200 12344
+WARNING 2022-06-30 23:07:32,111 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:07:32,112 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:08:36,838 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+INFO 2022-06-30 23:10:11,386 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+INFO 2022-06-30 23:10:13,939 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+INFO 2022-06-30 23:10:29,528 basehttp "GET /admin-home/ HTTP/1.1" 200 13278
+WARNING 2022-06-30 23:10:30,359 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:10:30,360 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:11:01,768 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+INFO 2022-06-30 23:11:12,952 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+INFO 2022-06-30 23:11:40,953 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+INFO 2022-06-30 23:11:50,553 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+INFO 2022-06-30 23:12:04,697 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+INFO 2022-06-30 23:12:26,359 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+INFO 2022-06-30 23:12:40,258 basehttp "GET /admin-home/ HTTP/1.1" 200 13282
+WARNING 2022-06-30 23:12:41,307 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:12:41,308 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:12:46,893 basehttp "GET /admin-home/ HTTP/1.1" 200 13281
+WARNING 2022-06-30 23:12:47,281 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:12:47,281 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:12:57,408 basehttp "GET /admin-home/ HTTP/1.1" 200 13301
+WARNING 2022-06-30 23:12:57,920 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:12:57,920 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:13:09,735 basehttp "GET /admin-home/ HTTP/1.1" 200 13316
+WARNING 2022-06-30 23:13:10,081 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:13:10,082 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:13:17,911 basehttp "GET /admin-home/ HTTP/1.1" 200 13337
+INFO 2022-06-30 23:13:24,435 basehttp "GET /admin-home/ HTTP/1.1" 200 13338
+WARNING 2022-06-30 23:13:24,912 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:13:24,912 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:13:39,504 basehttp "GET /admin-home/ HTTP/1.1" 200 13350
+WARNING 2022-06-30 23:13:39,851 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:13:39,851 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:13:49,191 basehttp "GET /admin-home/ HTTP/1.1" 200 13338
+WARNING 2022-06-30 23:13:49,540 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:13:49,540 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:13:55,496 basehttp "GET /admin-home/ HTTP/1.1" 200 13340
+WARNING 2022-06-30 23:13:55,830 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:13:55,830 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:14:08,340 basehttp "GET /admin-home/ HTTP/1.1" 200 13347
+WARNING 2022-06-30 23:14:08,686 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:14:08,687 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:14:13,178 basehttp "GET /admin-home/ HTTP/1.1" 200 13347
+WARNING 2022-06-30 23:14:13,530 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:14:13,531 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:14:19,028 basehttp "GET /admin-home/ HTTP/1.1" 200 13359
+WARNING 2022-06-30 23:14:19,587 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:14:19,587 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:14:30,556 basehttp "GET /admin-home/ HTTP/1.1" 200 13337
+WARNING 2022-06-30 23:14:30,899 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:14:30,899 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:14:35,560 basehttp "GET /admin-home/ HTTP/1.1" 200 13337
+WARNING 2022-06-30 23:14:36,061 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:14:36,061 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:14:50,107 basehttp "GET /admin-home/ HTTP/1.1" 200 13335
+WARNING 2022-06-30 23:14:50,962 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:14:50,962 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:14:55,820 basehttp "GET /admin-home/ HTTP/1.1" 200 13335
+WARNING 2022-06-30 23:14:56,244 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:14:56,244 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:15:45,223 basehttp "GET /admin-home/ HTTP/1.1" 200 13344
+WARNING 2022-06-30 23:15:46,029 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:15:46,030 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:16:07,426 basehttp "GET /admin-home/ HTTP/1.1" 200 13349
+WARNING 2022-06-30 23:16:08,747 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:16:08,747 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:16:43,384 basehttp "GET /admin-home/ HTTP/1.1" 200 13336
+WARNING 2022-06-30 23:16:44,099 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:16:44,099 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:16:54,793 basehttp "GET /admin-home/ HTTP/1.1" 200 13336
+WARNING 2022-06-30 23:16:55,701 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:16:55,701 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:17:15,158 basehttp "GET /admin-home/ HTTP/1.1" 200 13327
+WARNING 2022-06-30 23:17:15,923 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:17:15,923 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:18:55,759 basehttp "GET /admin-home/ HTTP/1.1" 200 13327
+INFO 2022-06-30 23:19:25,054 basehttp "GET /admin-home/ HTTP/1.1" 200 13327
+WARNING 2022-06-30 23:19:26,129 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:19:26,129 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:19:47,754 basehttp "GET /admin-home/ HTTP/1.1" 200 13328
+WARNING 2022-06-30 23:19:48,196 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:19:48,196 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:20:00,150 basehttp "GET /admin-home/ HTTP/1.1" 200 13317
+WARNING 2022-06-30 23:20:00,547 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:20:00,547 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:20:14,589 basehttp "GET /admin-home/ HTTP/1.1" 200 13351
+WARNING 2022-06-30 23:20:14,969 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:20:14,969 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:20:28,904 basehttp "GET /admin-home/ HTTP/1.1" 200 13364
+WARNING 2022-06-30 23:20:29,458 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:20:29,458 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:20:40,079 basehttp "GET /admin-home/ HTTP/1.1" 200 13379
+WARNING 2022-06-30 23:20:40,562 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:20:40,562 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:20:47,495 basehttp "GET /admin-home/ HTTP/1.1" 200 13364
+WARNING 2022-06-30 23:20:47,964 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:20:47,964 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:21:45,894 basehttp "GET /admin-home/ HTTP/1.1" 200 13364
+WARNING 2022-06-30 23:21:46,446 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:21:46,447 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:22:54,595 basehttp "GET /admin-home/ HTTP/1.1" 200 13369
+WARNING 2022-06-30 23:22:55,529 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:22:55,530 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:23:05,756 basehttp "GET /admin-home/ HTTP/1.1" 200 13367
+WARNING 2022-06-30 23:23:06,193 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:23:06,193 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:23:26,327 basehttp "GET /admin-home/ HTTP/1.1" 200 13367
+WARNING 2022-06-30 23:23:26,837 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:23:26,838 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:23:32,753 basehttp "GET /admin-home/ HTTP/1.1" 200 13367
+WARNING 2022-06-30 23:23:33,245 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:23:33,245 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:23:44,589 basehttp "GET /admin-home/ HTTP/1.1" 200 13367
+INFO 2022-06-30 23:23:46,203 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 17822
+INFO 2022-06-30 23:23:52,019 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 17026
+INFO 2022-06-30 23:23:54,557 basehttp "GET /admin-home/ HTTP/1.1" 200 13367
+INFO 2022-06-30 23:23:57,785 basehttp "GET / HTTP/1.1" 200 17433
+WARNING 2022-06-30 23:23:57,825 log Not Found: /styles.css
+WARNING 2022-06-30 23:23:57,825 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:23:57,945 log Not Found: /favicon.png
+WARNING 2022-06-30 23:23:57,946 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:28:57,818 basehttp "GET / HTTP/1.1" 200 17983
+WARNING 2022-06-30 23:28:57,849 log Not Found: /styles.css
+WARNING 2022-06-30 23:28:57,850 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:29:06,455 log Not Found: /styles.css
+WARNING 2022-06-30 23:29:06,455 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 23:29:13,121 basehttp "GET / HTTP/1.1" 200 17983
+WARNING 2022-06-30 23:29:13,155 log Not Found: /styles.css
+WARNING 2022-06-30 23:29:13,155 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 23:30:15,280 basehttp "GET / HTTP/1.1" 200 17508
+WARNING 2022-06-30 23:30:15,313 log Not Found: /styles.css
+WARNING 2022-06-30 23:30:15,313 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:30:16,078 log Not Found: /favicon.png
+WARNING 2022-06-30 23:30:16,079 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:41:50,938 basehttp "GET / HTTP/1.1" 200 18073
+WARNING 2022-06-30 23:41:50,974 log Not Found: /styles.css
+WARNING 2022-06-30 23:41:50,974 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 23:42:03,501 basehttp "GET / HTTP/1.1" 200 18081
+WARNING 2022-06-30 23:42:03,536 log Not Found: /styles.css
+WARNING 2022-06-30 23:42:03,536 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 23:43:04,700 basehttp "GET / HTTP/1.1" 200 18901
+WARNING 2022-06-30 23:43:04,743 log Not Found: /styles.css
+WARNING 2022-06-30 23:43:04,744 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:43:05,524 log Not Found: /favicon.png
+WARNING 2022-06-30 23:43:05,524 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:43:16,474 basehttp "GET / HTTP/1.1" 200 18737
+WARNING 2022-06-30 23:43:16,511 log Not Found: /styles.css
+WARNING 2022-06-30 23:43:16,512 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:43:16,944 log Not Found: /favicon.png
+WARNING 2022-06-30 23:43:16,945 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:43:40,465 basehttp "GET / HTTP/1.1" 200 18863
+WARNING 2022-06-30 23:43:40,494 log Not Found: /styles.css
+WARNING 2022-06-30 23:43:40,495 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:43:40,857 log Not Found: /favicon.png
+WARNING 2022-06-30 23:43:40,857 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:44:05,518 basehttp "GET / HTTP/1.1" 200 18888
+WARNING 2022-06-30 23:44:05,553 log Not Found: /styles.css
+WARNING 2022-06-30 23:44:05,553 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:44:05,888 log Not Found: /favicon.png
+WARNING 2022-06-30 23:44:05,888 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:44:36,108 basehttp "GET / HTTP/1.1" 200 18830
+WARNING 2022-06-30 23:44:36,149 log Not Found: /styles.css
+WARNING 2022-06-30 23:44:36,149 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:44:36,485 log Not Found: /favicon.png
+WARNING 2022-06-30 23:44:36,485 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:44:47,663 basehttp "GET / HTTP/1.1" 200 18851
+WARNING 2022-06-30 23:44:47,696 log Not Found: /styles.css
+WARNING 2022-06-30 23:44:47,696 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:44:47,996 log Not Found: /favicon.png
+WARNING 2022-06-30 23:44:47,996 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:44:55,988 basehttp "GET / HTTP/1.1" 200 18849
+WARNING 2022-06-30 23:44:56,023 log Not Found: /styles.css
+WARNING 2022-06-30 23:44:56,024 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:44:56,341 log Not Found: /favicon.png
+WARNING 2022-06-30 23:44:56,341 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:45:23,448 basehttp "GET / HTTP/1.1" 200 18854
+WARNING 2022-06-30 23:45:23,481 log Not Found: /styles.css
+WARNING 2022-06-30 23:45:23,482 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:45:23,822 log Not Found: /favicon.png
+WARNING 2022-06-30 23:45:23,822 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:46:09,815 basehttp "GET / HTTP/1.1" 200 18847
+WARNING 2022-06-30 23:46:09,847 log Not Found: /styles.css
+WARNING 2022-06-30 23:46:09,848 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:46:10,176 log Not Found: /favicon.png
+WARNING 2022-06-30 23:46:10,176 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:48:17,188 basehttp "GET / HTTP/1.1" 200 19094
+WARNING 2022-06-30 23:48:17,217 log Not Found: /styles.css
+WARNING 2022-06-30 23:48:17,218 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:48:18,024 log Not Found: /favicon.png
+WARNING 2022-06-30 23:48:18,025 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:49:50,831 basehttp "GET / HTTP/1.1" 200 19390
+WARNING 2022-06-30 23:49:50,873 log Not Found: /styles.css
+WARNING 2022-06-30 23:49:50,874 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:49:51,625 log Not Found: /favicon.png
+WARNING 2022-06-30 23:49:51,625 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:50:48,382 basehttp "GET / HTTP/1.1" 200 19413
+WARNING 2022-06-30 23:50:48,416 log Not Found: /styles.css
+WARNING 2022-06-30 23:50:48,417 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:50:48,761 log Not Found: /favicon.png
+WARNING 2022-06-30 23:50:48,761 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:51:22,194 basehttp "GET / HTTP/1.1" 200 19413
+WARNING 2022-06-30 23:51:22,216 log Not Found: /styles.css
+WARNING 2022-06-30 23:51:22,217 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:51:22,562 log Not Found: /favicon.png
+WARNING 2022-06-30 23:51:22,563 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:51:28,587 basehttp "GET / HTTP/1.1" 200 19407
+WARNING 2022-06-30 23:51:28,619 log Not Found: /styles.css
+WARNING 2022-06-30 23:51:28,619 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:51:28,925 log Not Found: /favicon.png
+WARNING 2022-06-30 23:51:28,925 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:51:39,012 basehttp "GET / HTTP/1.1" 200 19424
+WARNING 2022-06-30 23:51:39,043 log Not Found: /styles.css
+WARNING 2022-06-30 23:51:39,043 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:51:39,384 log Not Found: /favicon.png
+WARNING 2022-06-30 23:51:39,385 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:51:43,002 basehttp "GET / HTTP/1.1" 200 19426
+WARNING 2022-06-30 23:51:43,040 log Not Found: /styles.css
+WARNING 2022-06-30 23:51:43,040 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:51:43,352 log Not Found: /favicon.png
+WARNING 2022-06-30 23:51:43,353 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:52:03,589 basehttp "GET / HTTP/1.1" 200 19427
+WARNING 2022-06-30 23:52:03,621 log Not Found: /styles.css
+WARNING 2022-06-30 23:52:03,621 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:52:03,949 log Not Found: /favicon.png
+WARNING 2022-06-30 23:52:03,949 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:52:13,491 basehttp "GET / HTTP/1.1" 200 19446
+WARNING 2022-06-30 23:52:13,521 log Not Found: /styles.css
+WARNING 2022-06-30 23:52:13,522 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:52:13,848 log Not Found: /favicon.png
+WARNING 2022-06-30 23:52:13,848 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:52:19,081 basehttp "GET / HTTP/1.1" 200 19440
+WARNING 2022-06-30 23:52:19,114 log Not Found: /styles.css
+WARNING 2022-06-30 23:52:19,115 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:52:19,427 log Not Found: /favicon.png
+WARNING 2022-06-30 23:52:19,428 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:52:34,868 basehttp "GET / HTTP/1.1" 200 19434
+WARNING 2022-06-30 23:52:34,902 log Not Found: /styles.css
+WARNING 2022-06-30 23:52:34,903 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:52:35,233 log Not Found: /favicon.png
+WARNING 2022-06-30 23:52:35,233 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:52:43,808 basehttp "GET / HTTP/1.1" 200 19434
+WARNING 2022-06-30 23:52:43,843 log Not Found: /styles.css
+WARNING 2022-06-30 23:52:43,843 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:52:44,174 log Not Found: /favicon.png
+WARNING 2022-06-30 23:52:44,174 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:53:04,764 basehttp "GET / HTTP/1.1" 200 19437
+WARNING 2022-06-30 23:53:04,799 log Not Found: /styles.css
+WARNING 2022-06-30 23:53:04,799 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:53:05,102 log Not Found: /favicon.png
+WARNING 2022-06-30 23:53:05,102 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:53:10,501 basehttp "GET / HTTP/1.1" 200 19437
+WARNING 2022-06-30 23:53:10,530 log Not Found: /styles.css
+WARNING 2022-06-30 23:53:10,531 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:53:10,833 log Not Found: /favicon.png
+WARNING 2022-06-30 23:53:10,833 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:53:16,341 basehttp "GET / HTTP/1.1" 200 19434
+WARNING 2022-06-30 23:53:16,391 log Not Found: /styles.css
+WARNING 2022-06-30 23:53:16,391 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:53:16,693 log Not Found: /favicon.png
+WARNING 2022-06-30 23:53:16,693 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:53:31,291 basehttp "GET / HTTP/1.1" 200 19414
+WARNING 2022-06-30 23:53:31,324 log Not Found: /styles.css
+WARNING 2022-06-30 23:53:31,325 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:53:31,648 log Not Found: /favicon.png
+WARNING 2022-06-30 23:53:31,648 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:53:40,056 basehttp "GET / HTTP/1.1" 200 19417
+WARNING 2022-06-30 23:53:40,085 log Not Found: /styles.css
+WARNING 2022-06-30 23:53:40,086 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:53:40,423 log Not Found: /favicon.png
+WARNING 2022-06-30 23:53:40,423 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:54:24,813 basehttp "GET / HTTP/1.1" 200 19425
+WARNING 2022-06-30 23:54:24,846 log Not Found: /styles.css
+WARNING 2022-06-30 23:54:24,847 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:54:25,161 log Not Found: /favicon.png
+WARNING 2022-06-30 23:54:25,161 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:54:34,281 basehttp "GET / HTTP/1.1" 200 19423
+WARNING 2022-06-30 23:54:34,312 log Not Found: /styles.css
+WARNING 2022-06-30 23:54:34,313 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:54:34,641 log Not Found: /favicon.png
+WARNING 2022-06-30 23:54:34,641 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:54:59,843 basehttp "GET / HTTP/1.1" 200 19424
+WARNING 2022-06-30 23:54:59,877 log Not Found: /styles.css
+WARNING 2022-06-30 23:54:59,878 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:55:00,202 log Not Found: /favicon.png
+WARNING 2022-06-30 23:55:00,202 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:55:16,394 basehttp "GET / HTTP/1.1" 200 19462
+WARNING 2022-06-30 23:55:16,425 log Not Found: /styles.css
+WARNING 2022-06-30 23:55:16,427 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:55:16,743 log Not Found: /favicon.png
+WARNING 2022-06-30 23:55:16,743 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:55:20,558 basehttp "GET / HTTP/1.1" 200 19462
+WARNING 2022-06-30 23:55:20,590 log Not Found: /styles.css
+WARNING 2022-06-30 23:55:20,590 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:55:20,901 log Not Found: /favicon.png
+WARNING 2022-06-30 23:55:20,901 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:55:43,978 basehttp "GET / HTTP/1.1" 200 19469
+WARNING 2022-06-30 23:55:44,003 log Not Found: /styles.css
+WARNING 2022-06-30 23:55:44,004 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-06-30 23:55:44,325 log Not Found: /favicon.png
+WARNING 2022-06-30 23:55:44,325 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-06-30 23:56:28,197 basehttp "GET /admin-all-users/ HTTP/1.1" 200 9909
+WARNING 2022-06-30 23:56:28,354 log Not Found: /favicon.ico
+WARNING 2022-06-30 23:56:28,354 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-06-30 23:56:29,202 basehttp "GET /regular-update/ HTTP/1.1" 200 13001
+INFO 2022-06-30 23:56:34,657 basehttp "GET /admin/ HTTP/1.1" 200 8042
+INFO 2022-06-30 23:56:36,690 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 17822
+INFO 2022-06-30 23:56:37,565 basehttp "GET /admin-home/ HTTP/1.1" 200 13367
+INFO 2022-06-30 23:56:38,788 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 17822
+INFO 2022-06-30 23:58:44,944 basehttp "GET /admin-home/ HTTP/1.1" 200 13367
+INFO 2022-06-30 23:58:58,538 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-06-30 23:58:58,547 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-06-30 23:58:58,584 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-06-30 23:58:58,595 log Not Found: /login/css/style.css
+WARNING 2022-06-30 23:58:58,596 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+WARNING 2022-06-30 23:58:58,597 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-06-30 23:58:58,604 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-06-30 23:59:04,808 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-30 23:59:04,819 basehttp "GET / HTTP/1.1" 200 12957
+WARNING 2022-06-30 23:59:04,847 log Not Found: /styles.css
+WARNING 2022-06-30 23:59:04,847 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 23:59:10,295 basehttp "GET /withdraw/ HTTP/1.1" 200 7569
+WARNING 2022-06-30 23:59:10,331 log Not Found: /withdraw/styles.css
+WARNING 2022-06-30 23:59:10,332 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6571
+WARNING 2022-06-30 23:59:10,404 log Not Found: /withdraw/favicon.png
+WARNING 2022-06-30 23:59:10,404 basehttp "GET /withdraw/favicon.png HTTP/1.1" 404 6574
+INFO 2022-06-30 23:59:12,772 basehttp "POST /withdraw/ HTTP/1.1" 302 0
+INFO 2022-06-30 23:59:12,778 basehttp "GET /withdraw HTTP/1.1" 301 0
+INFO 2022-06-30 23:59:12,824 basehttp "GET /withdraw/ HTTP/1.1" 200 8105
+WARNING 2022-06-30 23:59:12,843 log Not Found: /withdraw/styles.css
+WARNING 2022-06-30 23:59:12,843 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6571
+INFO 2022-06-30 23:59:14,850 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-06-30 23:59:14,856 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-06-30 23:59:14,910 log Not Found: /login/css/style.css
+WARNING 2022-06-30 23:59:14,915 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-06-30 23:59:14,918 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+WARNING 2022-06-30 23:59:14,919 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-06-30 23:59:14,920 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-06-30 23:59:15,738 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-30 23:59:15,750 basehttp "GET / HTTP/1.1" 200 19469
+WARNING 2022-06-30 23:59:15,774 log Not Found: /styles.css
+WARNING 2022-06-30 23:59:15,774 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 23:59:17,468 basehttp "GET /admin-home/ HTTP/1.1" 200 13367
+INFO 2022-06-30 23:59:18,571 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 18740
+INFO 2022-06-30 23:59:21,092 basehttp "GET /update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/27/ HTTP/1.1" 200 12420
+INFO 2022-06-30 23:59:23,758 basehttp "POST /update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/27/ HTTP/1.1" 302 0
+INFO 2022-06-30 23:59:23,762 basehttp "GET /admin-withdrawal-requests HTTP/1.1" 301 0
+INFO 2022-06-30 23:59:23,793 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 18565
+INFO 2022-06-30 23:59:27,294 basehttp "GET / HTTP/1.1" 200 19585
+WARNING 2022-06-30 23:59:27,321 log Not Found: /styles.css
+WARNING 2022-06-30 23:59:27,321 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-06-30 23:59:33,374 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-06-30 23:59:33,383 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-06-30 23:59:33,432 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-06-30 23:59:33,434 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-06-30 23:59:33,442 log Not Found: /login/css/style.css
+WARNING 2022-06-30 23:59:33,446 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+WARNING 2022-06-30 23:59:33,447 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+INFO 2022-06-30 23:59:40,030 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-06-30 23:59:40,042 basehttp "GET / HTTP/1.1" 200 14018
+WARNING 2022-06-30 23:59:40,066 log Not Found: /styles.css
+WARNING 2022-06-30 23:59:40,066 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 00:00:38,347 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/models.py changed, reloading.
+INFO 2022-07-01 00:00:39,599 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 00:01:03,270 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 00:01:08,767 basehttp "GET /withdraw/ HTTP/1.1" 200 8123
+WARNING 2022-07-01 00:01:08,821 log Not Found: /withdraw/styles.css
+WARNING 2022-07-01 00:01:08,821 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6571
+INFO 2022-07-01 00:01:10,993 basehttp "POST /withdraw/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:01:10,999 basehttp "GET /withdraw HTTP/1.1" 301 0
+INFO 2022-07-01 00:01:11,043 basehttp "GET /withdraw/ HTTP/1.1" 200 8660
+WARNING 2022-07-01 00:01:11,063 log Not Found: /withdraw/styles.css
+WARNING 2022-07-01 00:01:11,064 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6571
+INFO 2022-07-01 00:01:20,087 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:01:20,097 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 00:01:20,140 log Not Found: /login/css/style.css
+WARNING 2022-07-01 00:01:20,151 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 00:01:20,152 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+WARNING 2022-07-01 00:01:20,153 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-07-01 00:01:20,158 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-07-01 00:01:21,508 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:01:21,523 basehttp "GET / HTTP/1.1" 200 19613
+WARNING 2022-07-01 00:01:21,554 log Not Found: /styles.css
+WARNING 2022-07-01 00:01:21,554 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 00:01:23,054 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20316
+INFO 2022-07-01 00:01:27,581 basehttp "GET /update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/28/ HTTP/1.1" 200 12459
+INFO 2022-07-01 00:01:30,253 basehttp "POST /update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/28/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:01:30,260 basehttp "GET /admin-withdrawal-requests HTTP/1.1" 301 0
+INFO 2022-07-01 00:01:30,307 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20140
+INFO 2022-07-01 00:01:42,151 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:01:42,158 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 00:01:42,199 log Not Found: /login/css/style.css
+WARNING 2022-07-01 00:01:42,199 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+WARNING 2022-07-01 00:01:42,206 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 00:01:42,207 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-07-01 00:01:42,211 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-07-01 00:01:49,298 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:01:49,310 basehttp "GET / HTTP/1.1" 200 15108
+WARNING 2022-07-01 00:01:49,333 log Not Found: /styles.css
+WARNING 2022-07-01 00:01:49,335 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 00:02:20,230 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:02:20,237 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 00:02:20,284 log Not Found: /login/css/style.css
+WARNING 2022-07-01 00:02:20,290 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 00:02:20,290 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-07-01 00:02:20,291 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+WARNING 2022-07-01 00:02:20,296 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-07-01 00:02:21,499 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:02:21,512 basehttp "GET / HTTP/1.1" 200 19729
+WARNING 2022-07-01 00:02:21,538 log Not Found: /styles.css
+WARNING 2022-07-01 00:02:21,539 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 00:02:27,298 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20140
+INFO 2022-07-01 00:03:15,783 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20140
+WARNING 2022-07-01 00:03:16,620 log Not Found: /favicon.ico
+WARNING 2022-07-01 00:03:16,620 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-07-01 00:03:18,546 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20140
+INFO 2022-07-01 00:03:39,755 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20177
+WARNING 2022-07-01 00:03:40,114 log Not Found: /favicon.ico
+WARNING 2022-07-01 00:03:40,114 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-07-01 00:04:00,654 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20176
+WARNING 2022-07-01 00:04:01,011 log Not Found: /favicon.ico
+WARNING 2022-07-01 00:04:01,012 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-07-01 00:04:11,822 basehttp "GET /admin-home/ HTTP/1.1" 200 13487
+INFO 2022-07-01 00:04:14,489 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 19601
+INFO 2022-07-01 00:04:38,273 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 19600
+WARNING 2022-07-01 00:04:38,630 log Not Found: /favicon.ico
+WARNING 2022-07-01 00:04:38,631 basehttp "GET /favicon.ico HTTP/1.1" 404 6547
+INFO 2022-07-01 00:04:44,189 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 19600
+INFO 2022-07-01 00:04:48,184 basehttp "GET /regular-update/ HTTP/1.1" 200 13001
+INFO 2022-07-01 00:05:00,976 basehttp "POST /regular-update/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:05:00,982 basehttp "GET /regular-update HTTP/1.1" 301 0
+INFO 2022-07-01 00:05:01,022 basehttp "GET /regular-update/ HTTP/1.1" 200 13302
+INFO 2022-07-01 00:05:09,240 basehttp "GET /admin-home/ HTTP/1.1" 200 13506
+INFO 2022-07-01 00:05:17,872 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:05:17,880 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 00:05:17,918 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 00:05:17,930 log Not Found: /login/css/style.css
+WARNING 2022-07-01 00:05:17,930 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+WARNING 2022-07-01 00:05:17,934 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-07-01 00:05:17,935 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-07-01 00:05:23,375 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 00:05:23,386 basehttp "GET / HTTP/1.1" 200 15127
+WARNING 2022-07-01 00:05:23,408 log Not Found: /styles.css
+WARNING 2022-07-01 00:05:23,408 basehttp "GET /styles.css HTTP/1.1" 404 6544
+WARNING 2022-07-01 00:05:23,516 log Not Found: /favicon.png
+WARNING 2022-07-01 00:05:23,516 basehttp "GET /favicon.png HTTP/1.1" 404 6547
+INFO 2022-07-01 07:15:49,941 basehttp "GET /admin-home/ HTTP/1.1" 200 4125
+INFO 2022-07-01 07:15:52,106 basehttp "GET / HTTP/1.1" 200 15127
+WARNING 2022-07-01 07:15:52,148 log Not Found: /styles.css
+WARNING 2022-07-01 07:15:52,149 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 07:15:53,694 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 07:15:53,704 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 07:15:53,752 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 07:15:53,757 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-07-01 07:15:53,768 log Not Found: /login/css/style.css
+WARNING 2022-07-01 07:15:53,768 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+WARNING 2022-07-01 07:15:53,769 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+INFO 2022-07-01 07:15:54,856 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 07:15:54,871 basehttp "GET / HTTP/1.1" 200 19729
+WARNING 2022-07-01 07:15:54,893 log Not Found: /styles.css
+WARNING 2022-07-01 07:15:54,894 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 07:16:10,543 basehttp "GET / HTTP/1.1" 200 19729
+WARNING 2022-07-01 07:16:10,590 log Not Found: /styles.css
+WARNING 2022-07-01 07:16:10,590 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 07:16:12,195 basehttp "GET /admin-home/ HTTP/1.1" 200 13506
+INFO 2022-07-01 07:16:44,700 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 19600
+INFO 2022-07-01 07:16:49,744 basehttp "GET /pdf-all-transactions/ HTTP/1.1" 200 6778
+INFO 2022-07-01 07:18:04,061 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20173
+INFO 2022-07-01 07:18:11,841 basehttp "GET /regular-update/ HTTP/1.1" 200 13302
+INFO 2022-07-01 07:18:20,976 basehttp "POST /regular-update/ HTTP/1.1" 302 0
+INFO 2022-07-01 07:18:20,982 basehttp "GET /regular-update HTTP/1.1" 301 0
+INFO 2022-07-01 07:18:21,023 basehttp "GET /regular-update/ HTTP/1.1" 200 13602
+INFO 2022-07-01 07:18:26,941 basehttp "GET /admin-home/ HTTP/1.1" 200 13522
+INFO 2022-07-01 07:59:30,348 basehttp "GET / HTTP/1.1" 200 19729
+WARNING 2022-07-01 07:59:30,384 log Not Found: /styles.css
+WARNING 2022-07-01 07:59:30,384 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 08:54:22,723 basehttp "GET / HTTP/1.1" 200 19729
+WARNING 2022-07-01 08:54:22,758 log Not Found: /styles.css
+WARNING 2022-07-01 08:54:22,759 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 08:58:11,207 basehttp "GET /regular-update/ HTTP/1.1" 200 13602
+INFO 2022-07-01 08:58:15,083 basehttp "POST /regular-update/ HTTP/1.1" 302 0
+INFO 2022-07-01 08:58:15,087 basehttp "GET /regular-update HTTP/1.1" 301 0
+INFO 2022-07-01 08:58:15,117 basehttp "GET /regular-update/ HTTP/1.1" 200 13906
+INFO 2022-07-01 08:58:25,533 basehttp "GET /admin-home/ HTTP/1.1" 200 13512
+INFO 2022-07-01 08:58:35,057 basehttp "GET /regular-update/ HTTP/1.1" 200 13906
+INFO 2022-07-01 08:58:40,651 basehttp "POST /regular-update/ HTTP/1.1" 302 0
+INFO 2022-07-01 08:58:40,657 basehttp "GET /regular-update HTTP/1.1" 301 0
+INFO 2022-07-01 08:58:40,697 basehttp "GET /regular-update/ HTTP/1.1" 200 14213
+INFO 2022-07-01 08:58:45,024 basehttp "GET /admin-home/ HTTP/1.1" 200 13529
+INFO 2022-07-01 08:58:52,472 basehttp "GET / HTTP/1.1" 200 19729
+WARNING 2022-07-01 08:58:52,505 log Not Found: /styles.css
+WARNING 2022-07-01 08:58:52,506 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 08:59:02,878 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 08:59:02,887 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 08:59:02,935 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 08:59:02,936 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-07-01 08:59:02,941 log Not Found: /login/css/style.css
+WARNING 2022-07-01 08:59:02,942 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+WARNING 2022-07-01 08:59:02,946 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-07-01 08:59:09,173 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 08:59:09,185 basehttp "GET / HTTP/1.1" 200 15140
+WARNING 2022-07-01 08:59:09,214 log Not Found: /styles.css
+WARNING 2022-07-01 08:59:09,214 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 08:59:37,833 basehttp "GET /admin-all-users/ HTTP/1.1" 200 4125
+INFO 2022-07-01 08:59:39,947 basehttp "GET / HTTP/1.1" 200 15140
+WARNING 2022-07-01 08:59:39,984 log Not Found: /styles.css
+WARNING 2022-07-01 08:59:39,984 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 08:59:41,163 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 08:59:41,171 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 08:59:41,230 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 08:59:41,232 log Not Found: /login/css/style.css
+WARNING 2022-07-01 08:59:41,232 basehttp "GET /login/css/style.css HTTP/1.1" 404 6571
+WARNING 2022-07-01 08:59:41,232 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6709
+WARNING 2022-07-01 08:59:41,233 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-07-01 08:59:42,337 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 08:59:42,350 basehttp "GET / HTTP/1.1" 200 19729
+WARNING 2022-07-01 08:59:42,372 log Not Found: /styles.css
+WARNING 2022-07-01 08:59:42,373 basehttp "GET /styles.css HTTP/1.1" 404 6544
+INFO 2022-07-01 08:59:44,903 basehttp "GET /admin-home/ HTTP/1.1" 200 13529
+INFO 2022-07-01 09:00:43,903 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 19600
+INFO 2022-07-01 09:00:56,603 basehttp "GET /admin-home/ HTTP/1.1" 200 13529
+INFO 2022-07-01 09:01:03,672 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20215
+INFO 2022-07-01 09:01:07,781 basehttp "GET /admin-home/ HTTP/1.1" 200 13529
+INFO 2022-07-01 09:01:10,962 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20215
+INFO 2022-07-01 09:02:06,947 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/models.py changed, reloading.
+INFO 2022-07-01 09:02:08,430 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:04:02,780 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/models.py changed, reloading.
+INFO 2022-07-01 09:04:03,675 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:04:08,293 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/models.py changed, reloading.
+INFO 2022-07-01 09:04:08,763 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:04:30,640 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/admin.py changed, reloading.
+INFO 2022-07-01 09:04:31,109 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:04:45,692 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:04:46,190 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:05:19,522 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:05:19,996 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:06:25,358 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/urls.py changed, reloading.
+INFO 2022-07-01 09:06:25,912 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:06:38,269 basehttp "GET /company-capital HTTP/1.1" 301 0
+INFO 2022-07-01 09:06:38,290 basehttp "GET /company-capital/ HTTP/1.1" 200 15
+INFO 2022-07-01 09:06:47,892 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+INFO 2022-07-01 09:07:38,794 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8933
+WARNING 2022-07-01 09:07:39,738 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:07:39,738 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:07:59,334 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8953
+WARNING 2022-07-01 09:08:00,027 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:08:00,027 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:08:33,764 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8960
+WARNING 2022-07-01 09:08:34,283 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:08:34,284 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:08:45,393 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8953
+WARNING 2022-07-01 09:08:45,800 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:08:45,800 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:08:59,278 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8955
+WARNING 2022-07-01 09:08:59,819 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:08:59,819 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:09:14,614 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8959
+WARNING 2022-07-01 09:09:15,081 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:09:15,081 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:09:38,738 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8966
+WARNING 2022-07-01 09:09:39,250 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:09:39,250 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:10:09,148 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8953
+WARNING 2022-07-01 09:10:09,624 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:10:09,625 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:10:22,507 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8959
+WARNING 2022-07-01 09:10:22,977 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:10:22,977 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:10:29,694 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8954
+WARNING 2022-07-01 09:10:30,167 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:10:30,168 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:10:44,364 basehttp "GET /fixed-rate-page/ HTTP/1.1" 200 8956
+WARNING 2022-07-01 09:10:45,318 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:10:45,319 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:10:49,364 basehttp "GET /company-capital/ HTTP/1.1" 200 8517
+INFO 2022-07-01 09:11:30,874 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 19623
+INFO 2022-07-01 09:11:32,105 basehttp "GET /admin-home/ HTTP/1.1" 200 13552
+INFO 2022-07-01 09:11:34,239 basehttp "GET /company-capital/ HTTP/1.1" 200 8517
+INFO 2022-07-01 09:12:14,882 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:12:18,988 basehttp "GET /admin/ HTTP/1.1" 200 8500
+INFO 2022-07-01 09:12:19,087 basehttp "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2022-07-01 09:12:21,425 basehttp "GET /admin/myapp/companycapital/ HTTP/1.1" 200 6391
+INFO 2022-07-01 09:12:21,484 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-07-01 09:12:21,492 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 232381
+INFO 2022-07-01 09:12:21,493 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 288580
+INFO 2022-07-01 09:12:22,914 basehttp "GET /admin/myapp/companycapital/add/ HTTP/1.1" 200 8481
+INFO 2022-07-01 09:12:22,949 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-07-01 09:12:25,478 basehttp "GET /admin/myapp/companycapital/ HTTP/1.1" 200 6391
+INFO 2022-07-01 09:14:36,874 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:14:37,491 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:14:41,234 basehttp "GET /company-capital/ HTTP/1.1" 200 8517
+INFO 2022-07-01 09:14:42,551 basehttp "GET /admin-home/ HTTP/1.1" 200 13552
+INFO 2022-07-01 09:14:53,265 basehttp "GET / HTTP/1.1" 200 19729
+WARNING 2022-07-01 09:14:53,327 log Not Found: /styles.css
+WARNING 2022-07-01 09:14:53,327 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:14:53,577 log Not Found: /favicon.png
+WARNING 2022-07-01 09:14:53,578 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+INFO 2022-07-01 09:14:56,525 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 20238
+INFO 2022-07-01 09:15:00,835 basehttp "GET /admin-home/ HTTP/1.1" 200 13552
+INFO 2022-07-01 09:15:04,874 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:15:04,883 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 09:15:04,918 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 09:15:04,926 log Not Found: /login/css/style.css
+WARNING 2022-07-01 09:15:04,926 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6896
+WARNING 2022-07-01 09:15:04,926 basehttp "GET /login/css/style.css HTTP/1.1" 404 6758
+WARNING 2022-07-01 09:15:04,932 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-07-01 09:15:10,497 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:15:10,511 basehttp "GET / HTTP/1.1" 200 15140
+WARNING 2022-07-01 09:15:10,540 log Not Found: /styles.css
+WARNING 2022-07-01 09:15:10,540 basehttp "GET /styles.css HTTP/1.1" 404 6731
+INFO 2022-07-01 09:15:14,074 basehttp "GET /withdraw/ HTTP/1.1" 200 8663
+WARNING 2022-07-01 09:15:14,108 log Not Found: /withdraw/styles.css
+WARNING 2022-07-01 09:15:14,108 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6758
+WARNING 2022-07-01 09:15:14,191 log Not Found: /withdraw/favicon.png
+WARNING 2022-07-01 09:15:14,192 basehttp "GET /withdraw/favicon.png HTTP/1.1" 404 6761
+INFO 2022-07-01 09:15:21,600 basehttp "POST /withdraw/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:15:21,605 basehttp "GET /withdraw HTTP/1.1" 301 0
+INFO 2022-07-01 09:15:21,648 basehttp "GET /withdraw/ HTTP/1.1" 200 9201
+WARNING 2022-07-01 09:15:21,671 log Not Found: /withdraw/styles.css
+WARNING 2022-07-01 09:15:21,671 basehttp "GET /withdraw/styles.css HTTP/1.1" 404 6758
+INFO 2022-07-01 09:15:24,813 basehttp "GET /admin-home/ HTTP/1.1" 200 4125
+INFO 2022-07-01 09:15:29,575 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:15:29,583 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 09:15:29,618 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 09:15:29,629 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6896
+WARNING 2022-07-01 09:15:29,632 log Not Found: /login/css/style.css
+WARNING 2022-07-01 09:15:29,633 basehttp "GET /login/css/style.css HTTP/1.1" 404 6758
+WARNING 2022-07-01 09:15:29,634 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-07-01 09:15:30,801 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:15:30,814 basehttp "GET / HTTP/1.1" 200 19729
+WARNING 2022-07-01 09:15:30,843 log Not Found: /styles.css
+WARNING 2022-07-01 09:15:30,844 basehttp "GET /styles.css HTTP/1.1" 404 6731
+INFO 2022-07-01 09:15:32,679 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 21971
+INFO 2022-07-01 09:15:52,874 basehttp "GET /update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/29/ HTTP/1.1" 200 12484
+INFO 2022-07-01 09:15:57,288 basehttp "POST /update-withdraw-status/checkby/nobackallowed/be72fa80-f77c-11ec-b939-0242ac120002/29/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:15:57,294 basehttp "GET /admin-withdrawal-requests HTTP/1.1" 301 0
+INFO 2022-07-01 09:15:57,340 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 21794
+INFO 2022-07-01 09:16:00,666 basehttp "GET /admin-withdrawal-requests/ HTTP/1.1" 200 21794
+INFO 2022-07-01 09:16:14,082 basehttp "GET /admin-home/ HTTP/1.1" 200 13613
+INFO 2022-07-01 09:16:23,442 basehttp "GET /admin/ HTTP/1.1" 200 8500
+INFO 2022-07-01 09:16:25,022 basehttp "GET /admin/myapp/companycapital/ HTTP/1.1" 200 7561
+INFO 2022-07-01 09:16:25,059 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-07-01 09:16:26,117 basehttp "GET /admin/myapp/companycapital/1/change/ HTTP/1.1" 200 8750
+INFO 2022-07-01 09:16:26,146 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2022-07-01 09:16:38,632 basehttp "GET / HTTP/1.1" 200 19845
+WARNING 2022-07-01 09:16:38,660 log Not Found: /styles.css
+WARNING 2022-07-01 09:16:38,661 basehttp "GET /styles.css HTTP/1.1" 404 6731
+INFO 2022-07-01 09:16:44,114 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:16:44,122 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 09:16:44,166 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 09:16:44,173 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6896
+WARNING 2022-07-01 09:16:44,179 log Not Found: /login/css/style.css
+WARNING 2022-07-01 09:16:44,179 basehttp "GET /login/css/style.css HTTP/1.1" 404 6758
+WARNING 2022-07-01 09:16:44,180 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+INFO 2022-07-01 09:16:50,443 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:16:50,455 basehttp "GET / HTTP/1.1" 200 16226
+WARNING 2022-07-01 09:16:50,482 log Not Found: /styles.css
+WARNING 2022-07-01 09:16:50,482 basehttp "GET /styles.css HTTP/1.1" 404 6731
+INFO 2022-07-01 09:18:16,374 basehttp "GET / HTTP/1.1" 200 16226
+WARNING 2022-07-01 09:18:16,407 log Not Found: /styles.css
+WARNING 2022-07-01 09:18:16,407 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:18:17,246 log Not Found: /favicon.png
+WARNING 2022-07-01 09:18:17,246 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+INFO 2022-07-01 09:18:56,085 basehttp "GET / HTTP/1.1" 200 16230
+WARNING 2022-07-01 09:18:56,116 log Not Found: /styles.css
+WARNING 2022-07-01 09:18:56,117 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:18:56,552 log Not Found: /favicon.png
+WARNING 2022-07-01 09:18:56,553 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+INFO 2022-07-01 09:19:20,167 basehttp "GET / HTTP/1.1" 200 16350
+WARNING 2022-07-01 09:19:20,198 log Not Found: /styles.css
+WARNING 2022-07-01 09:19:20,199 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:19:20,598 log Not Found: /favicon.png
+WARNING 2022-07-01 09:19:20,598 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+INFO 2022-07-01 09:19:39,580 basehttp "GET / HTTP/1.1" 200 16367
+WARNING 2022-07-01 09:19:39,613 log Not Found: /styles.css
+WARNING 2022-07-01 09:19:39,614 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:19:39,950 log Not Found: /favicon.png
+WARNING 2022-07-01 09:19:39,950 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+INFO 2022-07-01 09:20:05,658 basehttp "GET / HTTP/1.1" 200 16266
+WARNING 2022-07-01 09:20:05,690 log Not Found: /styles.css
+WARNING 2022-07-01 09:20:05,690 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:20:06,112 log Not Found: /favicon.png
+WARNING 2022-07-01 09:20:06,112 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+INFO 2022-07-01 09:20:13,180 basehttp "GET / HTTP/1.1" 200 16242
+WARNING 2022-07-01 09:20:13,213 log Not Found: /styles.css
+WARNING 2022-07-01 09:20:13,213 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:20:13,507 log Not Found: /favicon.png
+WARNING 2022-07-01 09:20:13,508 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+INFO 2022-07-01 09:20:28,390 basehttp "GET / HTTP/1.1" 200 16241
+WARNING 2022-07-01 09:20:28,422 log Not Found: /styles.css
+WARNING 2022-07-01 09:20:28,423 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:20:28,740 log Not Found: /favicon.png
+WARNING 2022-07-01 09:20:28,741 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+INFO 2022-07-01 09:20:50,815 basehttp "GET /logout/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:20:50,824 basehttp "GET /login/ HTTP/1.1" 200 11947
+WARNING 2022-07-01 09:20:50,861 log Not Found: /login/fonts/material-icon/css/material-design-iconic-font.min.css
+WARNING 2022-07-01 09:20:50,872 log Not Found: /login/css/style.css
+WARNING 2022-07-01 09:20:50,877 basehttp "GET /login/fonts/material-icon/css/material-design-iconic-font.min.css HTTP/1.1" 404 6896
+WARNING 2022-07-01 09:20:50,878 basehttp "GET /login/css/style.css HTTP/1.1" 404 6758
+WARNING 2022-07-01 09:20:50,879 basehttp "GET /static/images/login-bg.jpg HTTP/1.1" 404 1917
+WARNING 2022-07-01 09:20:50,911 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:20:50,912 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:20:51,875 basehttp "POST /login/ HTTP/1.1" 302 0
+INFO 2022-07-01 09:20:51,890 basehttp "GET / HTTP/1.1" 200 19860
+WARNING 2022-07-01 09:20:51,915 log Not Found: /styles.css
+WARNING 2022-07-01 09:20:51,915 basehttp "GET /styles.css HTTP/1.1" 404 6731
+INFO 2022-07-01 09:21:01,491 basehttp "GET /company-capital/ HTTP/1.1" 200 8517
+INFO 2022-07-01 09:22:39,818 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:22:40,376 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:22:59,975 basehttp "GET /company-capital/ HTTP/1.1" 200 9576
+WARNING 2022-07-01 09:23:00,842 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:23:00,842 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:23:29,329 basehttp "GET /company-capital/ HTTP/1.1" 200 9579
+WARNING 2022-07-01 09:23:29,670 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:23:29,671 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:23:34,712 basehttp "GET /company-capital/ HTTP/1.1" 200 9579
+WARNING 2022-07-01 09:23:35,031 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:23:35,031 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:24:52,135 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:24:52,730 autoreload Watching for file changes with StatReloader
+ERROR 2022-07-01 09:25:09,112 log Internal Server Error: /company-capital/
+Traceback (most recent call last):
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py", line 180, in company_capital_page
+    mydata = Transaction.objects.annotate(total_present_amount=Sum('commission')).order_by('-total_present_amount')
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/query.py", line 1225, in annotate
+    return self._annotate(args, kwargs, select=True)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/query.py", line 1273, in _annotate
+    clone.query.add_annotation(
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1105, in add_annotation
+    annotation = annotation.resolve_expression(
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/aggregates.py", line 64, in resolve_expression
+    c = super().resolve_expression(query, allow_joins, reuse, summarize)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/expressions.py", line 762, in resolve_expression
+    c.source_expressions[pos] = arg.resolve_expression(
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/expressions.py", line 655, in resolve_expression
+    return query.resolve_ref(self.name, allow_joins, reuse, summarize)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1922, in resolve_ref
+    join_info = self.setup_joins(
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1773, in setup_joins
+    path, final_field, targets, rest = self.names_to_path(
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/db/models/sql/query.py", line 1677, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'commission' into field. Choices are: amount, bank_name, bank_txn_id, checksum, fixed_rate, gateway_name, id, last_updated, made_by, made_on, order_id, payment_mode, plantype, present_amount, response_message, status, txn_id
+ERROR 2022-07-01 09:25:09,115 basehttp "GET /company-capital/ HTTP/1.1" 500 118970
+WARNING 2022-07-01 09:25:09,235 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:25:09,235 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:25:20,912 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:25:21,428 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:25:22,472 basehttp "GET /company-capital/ HTTP/1.1" 200 9579
+WARNING 2022-07-01 09:25:22,756 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:25:22,756 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:25:23,776 basehttp "GET /company-capital/ HTTP/1.1" 200 9579
+WARNING 2022-07-01 09:25:24,563 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:25:24,563 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:25:55,690 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:25:56,233 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:25:57,857 basehttp "GET /company-capital/ HTTP/1.1" 200 9579
+WARNING 2022-07-01 09:25:58,249 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:25:58,250 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:26:07,789 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:26:08,370 autoreload Watching for file changes with StatReloader
+ERROR 2022-07-01 09:26:10,555 log Internal Server Error: /company-capital/
+Traceback (most recent call last):
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py", line 182, in company_capital_page
+    print(i['total_present_amount'])
+TypeError: 'CompanyCapital' object is not subscriptable
+ERROR 2022-07-01 09:26:10,558 basehttp "GET /company-capital/ HTTP/1.1" 500 68616
+WARNING 2022-07-01 09:26:10,671 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:26:10,672 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:27:02,597 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:27:03,067 autoreload Watching for file changes with StatReloader
+ERROR 2022-07-01 09:27:04,177 log Internal Server Error: /company-capital/
+Traceback (most recent call last):
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/vibhanshugarg/.local/share/virtualenvs/finance-27WbOPzl/lib/python3.9/site-packages/django/contrib/auth/decorators.py", line 23, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py", line 182, in company_capital_page
+    print(i['total_present_amount'])
+TypeError: 'CompanyCapital' object is not subscriptable
+ERROR 2022-07-01 09:27:04,178 basehttp "GET /company-capital/ HTTP/1.1" 500 68618
+WARNING 2022-07-01 09:27:04,332 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:27:04,332 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:27:09,394 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:27:09,946 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:27:10,928 basehttp "GET /company-capital/ HTTP/1.1" 200 9579
+WARNING 2022-07-01 09:27:11,243 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:27:11,243 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:27:12,082 basehttp "GET /company-capital/ HTTP/1.1" 200 9579
+INFO 2022-07-01 09:36:31,918 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:36:32,944 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:36:39,326 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:36:39,854 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:36:51,578 basehttp "GET /company-capital/ HTTP/1.1" 200 9343
+WARNING 2022-07-01 09:36:52,679 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:36:52,679 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:37:02,918 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:37:03,499 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:37:05,681 basehttp "GET /company-capital/ HTTP/1.1" 200 9613
+WARNING 2022-07-01 09:37:05,804 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:37:05,805 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:37:10,296 basehttp "GET /admin-home/ HTTP/1.1" 200 13613
+INFO 2022-07-01 09:38:09,761 basehttp "GET / HTTP/1.1" 200 19860
+WARNING 2022-07-01 09:38:09,795 log Not Found: /styles.css
+WARNING 2022-07-01 09:38:09,795 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:38:10,761 log Not Found: /favicon.png
+WARNING 2022-07-01 09:38:10,761 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+WARNING 2022-07-01 09:38:12,627 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:38:12,628 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:38:13,686 basehttp "GET /company-capital/ HTTP/1.1" 200 9697
+WARNING 2022-07-01 09:38:14,214 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:38:14,214 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:38:26,061 basehttp "GET /company-capital/ HTTP/1.1" 200 9678
+WARNING 2022-07-01 09:38:26,553 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:38:26,553 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:38:35,566 basehttp "GET /company-capital/ HTTP/1.1" 200 9679
+WARNING 2022-07-01 09:38:36,073 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:38:36,073 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:38:47,422 basehttp "GET /company-capital/ HTTP/1.1" 200 9662
+WARNING 2022-07-01 09:38:47,860 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:38:47,861 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:38:53,955 basehttp "GET /company-capital/ HTTP/1.1" 200 9660
+WARNING 2022-07-01 09:38:54,439 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:38:54,440 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:39:21,486 basehttp "GET /company-capital/ HTTP/1.1" 200 9648
+WARNING 2022-07-01 09:39:22,157 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:39:22,158 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:39:36,182 basehttp "GET /company-capital/ HTTP/1.1" 200 9638
+INFO 2022-07-01 09:39:40,222 basehttp "GET /company-capital/ HTTP/1.1" 200 9638
+WARNING 2022-07-01 09:39:43,012 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:39:43,013 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:40:01,167 basehttp "GET /admin-home/ HTTP/1.1" 200 13613
+INFO 2022-07-01 09:40:02,650 basehttp "GET /company-capital/ HTTP/1.1" 200 9638
+INFO 2022-07-01 09:43:18,980 basehttp "GET /admin-home/ HTTP/1.1" 200 13613
+INFO 2022-07-01 09:43:19,527 basehttp "GET /admin-all-transactions/ HTTP/1.1" 200 20514
+INFO 2022-07-01 09:43:23,071 basehttp "GET /admin-home/ HTTP/1.1" 200 13613
+INFO 2022-07-01 09:43:32,796 basehttp "GET /company-capital/ HTTP/1.1" 200 9638
+INFO 2022-07-01 09:44:35,748 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:44:36,267 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:44:38,513 basehttp "GET /company-capital/ HTTP/1.1" 200 9638
+WARNING 2022-07-01 09:44:38,626 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:44:38,627 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:45:55,971 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:45:56,554 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:45:58,822 basehttp "GET /company-capital/ HTTP/1.1" 200 9638
+WARNING 2022-07-01 09:45:58,934 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:45:58,935 basehttp "GET /favicon.ico HTTP/1.1" 404 6734
+INFO 2022-07-01 09:46:14,355 basehttp "GET /admin-all-users/ HTTP/1.1" 200 9932
+INFO 2022-07-01 09:46:15,664 basehttp "GET /admin-home/ HTTP/1.1" 200 13613
+INFO 2022-07-01 09:46:18,060 basehttp "GET /company-capital/ HTTP/1.1" 200 9638
+INFO 2022-07-01 09:47:47,578 autoreload /Users/vibhanshugarg/Desktop/Django Vibhanshu/finance/myapp/views.py changed, reloading.
+INFO 2022-07-01 09:47:48,357 autoreload Watching for file changes with StatReloader
+INFO 2022-07-01 09:47:50,101 basehttp "GET / HTTP/1.1" 200 19860
+WARNING 2022-07-01 09:47:50,133 log Not Found: /styles.css
+WARNING 2022-07-01 09:47:50,133 basehttp "GET /styles.css HTTP/1.1" 404 6731
+WARNING 2022-07-01 09:47:50,240 log Not Found: /favicon.png
+WARNING 2022-07-01 09:47:50,240 basehttp "GET /favicon.png HTTP/1.1" 404 6734
+INFO 2022-07-01 09:47:51,357 basehttp "GET /company-capital/ HTTP/1.1" 200 9638
+WARNING 2022-07-01 09:47:51,483 log Not Found: /favicon.ico
+WARNING 2022-07-01 09:47:51,483 basehttp "GET /favicon.ico HTTP/1.1" 404 6734

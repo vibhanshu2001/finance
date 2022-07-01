@@ -40,8 +40,8 @@ class Transaction(models.Model):
     plantype = models.CharField(max_length=200, choices=PLAN_TYPE, default='flexible')
     fixed_rate = models.CharField(max_length=3, null=True, default='3')
     made_on = models.DateTimeField(auto_now_add=True)
-    amount = models.IntegerField()
-    present_amount = models.IntegerField(null=True, blank=True)
+    amount = models.FloatField()
+    present_amount = models.FloatField(null=True, blank=True)
     order_id = models.CharField(unique=True, max_length=100, null=True, blank=True)
     checksum = models.CharField(max_length=200, null=True, blank=True)
     txn_id = models.CharField(max_length=100, null=True, blank=True)
@@ -57,14 +57,21 @@ class Transaction(models.Model):
 class Withdraw(models.Model):
     requested_by = models.CharField(max_length=100, null=True, blank=True)
     requested_on = models.DateTimeField(default=timezone.now)
-    amount = models.IntegerField()
-    present_balance = models.IntegerField(null=True, blank=True)
-    invested_balance = models.IntegerField(null=True, blank=True)
+    amount = models.FloatField()
+    present_balance = models.FloatField(null=True, blank=True)
+    invested_balance = models.FloatField(null=True, blank=True)
     status = models.CharField(max_length=5, null=True, blank=True)
     status_updated_by = models.CharField(max_length=100, null=True, blank=True)
-    user_commission = models.IntegerField(null=True, blank=True, default=25)
+    user_commission = models.FloatField(null=True, blank=True, default=25)
     status_updated_on = models.DateTimeField(null=True, blank=True)
     plantype = models.CharField(max_length=200, choices=PLAN_TYPE, default='',null=True, blank=True)
     def __str__(self):
         return str(self.requested_by)
+class CompanyCapital(models.Model):
+    commission_by = models.CharField(max_length=100, null=True, blank=True)
+    date = models.DateTimeField(default=timezone.now)
+    commission = models.FloatField(null=True, blank=True)
+
+    def __str__(self):
+        return str(self.commission_by)
 

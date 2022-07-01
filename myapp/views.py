@@ -8,7 +8,7 @@ import json
 import requests
 from . import Checksum
 from django.http import HttpResponse
-from .models import UserProfile, RegularUpdate, Transaction, Withdraw
+from .models import UserProfile, RegularUpdate, Transaction, Withdraw, CompanyCapital
 from django.contrib.auth.decorators import login_required
 from django.db.models import Sum
 from django.utils import timezone
@@ -112,6 +112,15 @@ def admin_withdrawal_requests(request):
             new_comment = 'Amount withdrawn successfully and remaining amount in case is rolled over as this transaction'
             transaction = Transaction.objects.create(made_by=i.requested_by, amount=new_invest_amount,present_amount=new_invest_amount,status=new_txn_status,txn_id=new_txn_id,order_id=new_order_id,payment_mode=new_payment_mode,bank_txn_id=new_bank_txn_id,response_message=new_comment)
             transaction.save()
+            # 
+            company_commission = i.user_commission*(i.present_balance-i.invested_balance)/100
+            companycapital = CompanyCapital.objects.create(commission_by=i.requested_by,commission=company_commission)
+            companycapital.save()
+            # 
+
+
+
+
 
     return render(request, 'admin-templates/admin-withdrawal-requests.html',{'data':data})
 def update_withdrawl_requests(request,id):
@@ -155,7 +164,7 @@ def fixed_rate_update(request):
     for i in result:
         if i.plantype == 'fixed' and i.status == 'TXN_SUCCESS':
             percent_alter = int(i.fixed_rate)
-            print(i.present_amount)
+            print(percent_alter)
             i.present_amount =  i.present_amount + i.amount*percent_alter/100
             i.last_updated = timezone.now()
             i.save()
@@ -165,6 +174,13 @@ def fixed_rate_update(request):
 @login_required
 def fixed_rate_page(request):
     return render(request,'admin-templates/fixed-rate-update.html')
+@login_required
+def company_capital_page(request):
+    datas = CompanyCapital.objects.all()
+    total_capital = 0
+    for i in datas:
+        total_capital += i.commission
+    return render(request,'admin-templates/company-capital.html',{'total_capital':total_capital,'datas':datas})
     
 @login_required
 def index(request):
@@ -204,8 +220,13 @@ def admin_home(request):
             if j.user.username == i.made_by:
                 i.plantype = j.plantype
                 i.save()
+    # 
+    labels = ['Current Invested Amount by all users','Current Value of all invested amount']
+    data = [total_money, total_present_value]
     
-    return render(request,'admin-templates/admin-home.html',{'total_money':total_money,'result':result,'total_present_value':total_present_value})
+    # 
+    
+    return render(request,'admin-templates/admin-home.html',{'total_money':total_money,'result':result,'total_present_value':total_present_value,'labels':labels,'data':data})
 def admin_all_transactions(request):
     transaction = Transaction.objects.all()
     return render(request,'admin-templates/admin-all-transaction.html',{'transaction':transaction})
@@ -314,7 +335,7 @@ def response(request):
             for i in result:
                 userdata = UserProfile.objects.all()
                 for j in userdata:
-                    if j.user == i.made_by:
+                    if j.user.username == i.made_by:
                         i.plantype = j.plantype
                         i.fixed_rate = j.fixed_rate
                         i.save()

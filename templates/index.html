@@ -37,9 +37,7 @@
                 </nav>
             </div>
         </header>
-        <small>Welcome <b>{{request.user.username|title}}</b> 
-            <a class="text-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">(view profile)</a>
-        </small>
+        
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -53,10 +51,10 @@
                         {% for i in userdata %}
                             {% if i.user.username == request.user.username %}
                             <li class="list-group-item"><small>Plantype</small> <span class="badge bg-dark">{{i.plantype}}</span></li>
-                            <li class="list-group-item"><small>Fixed Rate</small> <span class="badge bg-dark">{{i.fixed_rate}}</span></li>
+                            <li class="list-group-item"><small>Fixed Rate Interest</small> <span class="badge bg-dark">{{i.fixed_rate}}%</span></li>
                             <li class="list-group-item"><small>Profession</small> <span class="badge bg-dark">{{i.profession}}</span></li>
                             <li class="list-group-item"><small>Mobile</small> <span class="badge bg-dark">{{i.mobile}}</span></li>
-                            <li class="list-group-item"><small>Profile Photo</small> <span class="badge bg-dark"><a class="text-decoration-none  text-white" target="_blank" href="{{i.profilephoto.url}}" alt="">click me</a></span></li>
+                            <li class="list-group-item"><small>Profile Photo</small> <span class="badge bg-primary"><a class="text-decoration-none  text-white" target="_blank" href="{{i.profilephoto.url}}" alt="">click me</a></span></li>
                             {% endif %}
                         {% endfor %}
 
@@ -73,8 +71,29 @@
             </div>
           </div>
 
+          <div class="card shadow-sm my-4" style="border-radius:15px;">
 
-        <h3 class="display-4 text-center" style="color:#212529; font-size:30px !important;font-weight:bold">Investments</h3>
+            <div class="card-body text-center ">
+                
+                <h3 class="display-4" style="color:#212529; font-size:30px !important">Welcome <b>{{request.user.username|title}}</b></h3>
+                    <a class="text-primary text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal" type="button">view profile</a>
+                    <div style="display:flex;justify-content:space-between;align-items:center">
+                        <span>
+                            Total invested amount: ₹<b style="color:black" id="invested-amount"></b>
+                        </span>
+                        <span>
+                            Total present value of investments: ₹<b style="color:blue;font-size: 1.3rem;" id="present-amount"></b>
+                        </span>
+                        <span>
+                            Profit/Loss: <b style="color:green;font-size: 1.3rem;" id="percent"></b><span style="font-size:0.6rem">%</span>
+                        </span>
+                    </div>
+                    
+                    
+                
+            </div>
+        </div>
+        <h3 class="display-4 text-center mt-5" style="color:#212529; font-size:30px !important;font-weight:bold">Active Investments</h3>
         <div class="card shadow my-4" style="border: 0 !important;border-radius:15px">
 
             <div class="card-body  ">
@@ -107,12 +126,12 @@
                             
                             
                         </tbody>
+                        
                     </table>
                 </div>
                 
             </div>
         </div>
-
         <h3 class="display-4 text-center mt-5" style="color:#212529; font-size:30px !important;font-weight:bold">All Transactions</h3>
         <div class="card shadow my-4" style="border: 0 !important;border-radius:15px">
 
@@ -171,7 +190,7 @@
         
             </div>
         </div>
-
+        
         <footer class="pt-4 my-md-5 pt-md-5 border-top">
             <div class="row">
                 <div class="col-12 col-md text-center">
@@ -190,11 +209,32 @@
         <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.js"></script>
         <script>
             $(document).ready( function () {
-            $('#transTable').DataTable();
-            $('#transTable2').DataTable({
-                order: [[1, 'desc']],
-            });
-        } );
+                $('#transTable').DataTable();
+                $('#transTable2').DataTable({
+                    order: [[1, 'asc']],
+                });
+                var invested_amount = 0;                
+                var present_amount = 0;
+                $("#transTable tr").not(':first').each(function() {
+                invested_amount +=  getnum($(this).find("td:eq(1)").text());
+                present_amount +=  getnum($(this).find("td:eq(2)").text());
+                function getnum(t){
+                    if(isNumeric(t)){
+                        return parseInt(t,10);
+                    }
+                    return 0;
+                        function isNumeric(n) {
+                        return !isNaN(parseFloat(n)) && isFinite(n);
+                        }
+                }
+                });
+                var percent = parseFloat(100*(present_amount-invested_amount)/invested_amount).toFixed(2);
+                $("#invested-amount").text(invested_amount);
+                $("#present-amount").text(present_amount);
+                $("#percent").text(percent);
+                
+            } );
+            
         </script>
 </body>
 

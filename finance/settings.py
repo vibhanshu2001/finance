@@ -144,30 +144,7 @@ PAYTM_INDUSTRY_TYPE_ID = 'Retail'
 
 
 #logging information settings
-LOGGING = {
-    'version': 1,
-    'loggers':{
-        'django': {
-            'handlers':['file'],
-            'level': 'DEBUG',
-        }
-    },
-    'handlers': {
-        'file': {
-            'level': 'INFO',
-            'class': 'logging.FileHandler',
-            'filename': './log/debug.log',
-            'formatter': 'simpleRe'
-        },
-    },
-    'formatters': {
-        'simpleRe': {
-            'format': '{levelname} {asctime} {module} {message}',
-            'style':'{'
-        }
-    }
-    
-}
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
